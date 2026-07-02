@@ -47,3 +47,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+RC2_Transformations/output/node_table.csv
+RC2_Transformations/output/Transformations_summary_all.csv

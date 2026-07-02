@@ -1,0 +1,739 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+# Loading libraries
+
+```{r}
+
+library(ggh4x)
+library(vegan)
+#library(lme4)
+library(broom.mixed)
+library(tidymodels)
+library(ggrepel)
+library(dendextend)
+library(rstatix)
+library(performance)
+library(tidyverse)
+
+```
+
+
+## Functions
+
+
+```{r}
+
+## Classify tranformation
+
+
+classify_transformation <- function(formula_name) {
+  # Safe element detection regexes for formulas (case-sensitive)
+  # Matches the capital letter only if not surrounded by lowercase letters 
+  # (avoids matching elements like Na, Si, Se, Pb, etc., or lowercase words)
+  is_sulfur_formula     <- "(?<![a-z])S(?![a-z])"
+  is_phosphorus_formula <- "(?<![a-z])P(?![a-z])"
+  is_nitrogen_formula   <- "(?<![a-z])N(?![a-z])"
+  
+  case_when(
+    # 1. Sulfur-containing (Both formulas with 'S' and sulfur-related names)
+    str_detect(formula_name, is_sulfur_formula) |
+      str_detect(formula_name, regex("sulfat|thio|cysteine|cystine|glutathione|methionine", 
+                                     ignore_case = TRUE)) ~ "Sulfur",
+    
+    # 2. Phosphorus-containing (Both formulas with 'P' and phosphorus-related names)
+    str_detect(formula_name, is_phosphorus_formula) |
+      str_detect(formula_name, regex("PO4|phosph|adenylat", ignore_case = TRUE)) ~ "Phosphorus",
+    
+    # 3. Nitrogen-containing (Both formulas with 'N' and nitrogen-related names)
+    str_detect(formula_name, is_nitrogen_formula) |
+      str_detect(formula_name, regex("NO3|NH4|urea|amine|amino|uracil|adenine|guanine", 
+                                     ignore_case = TRUE)) ~ "Nitrogen",
+    
+    # 4. Named amino acids
+    str_detect(formula_name, regex(
+      "alanine|arginine|aspara|aspart|cysteine|glutam|glycine|histidine|isoleucine|leucine|lysine|methionine|phenylalanine|proline|serine|threonine|tryptophan|tyrosine|valine",
+      ignore_case = TRUE)) ~ "Amino_acid",
+    
+    # 5. Carbon-framework (Starts with 'C' in formulas, or C-centric names)
+    str_detect(formula_name, "^C(?![a-z])") |
+      str_detect(formula_name, regex("sugar|glucose|cellulose|lignin|lipid|fatty", 
+                                     ignore_case = TRUE)) ~ "Carbon_framework",
+    
+    # Fallback
+    TRUE ~ "Other"
+  )
+}
+
+
+```
+
+
+
+# Loading dataset
+
+## Transformations results
+
+
+```{r}
+
+trans_summary <- read_csv("output/Transformations_summary_all.csv") %>% 
+  select(!c("Group", "Transformation", "mf")) %>% 
+  mutate(Formula = case_when(
+    
+    # Matches #N/A-1 through #N/A-5
+    str_detect(Formula, "#N/A-[1-5]") ~ str_replace(Formula, "#N/A-", "NA_"),
+    TRUE ~ Formula
+  ))
+
+trans_counts <- read_csv("output/Transformations_summary_counts.csv") %>% 
+  mutate(Formula = case_when(
+    
+    # Matches #N/A-1 through #N/A-5
+    str_detect(Formula, "#N/A-[1-5]") ~ str_replace(Formula, "#N/A-", "NA_"),
+    TRUE ~ Formula
+  ))
+
+biotic_abio <- read_csv("metabodirect/data/Biotic-abiotic-transfromation-classification.csv")
+
+## Fixing name mismatches
+
+key_fixed <- biotic_abio %>% 
+  mutate(
+    Name = str_replace_all(Name, "'", "_"),
+    
+    Name = case_when(
+      str_detect(Name, "PO43-")  ~ "PO43",
+      str_detect(Name, "SO42-")  ~ "SO42",
+      str_detect(Name, "S2O32-") ~ "S2O32",
+      str_detect(Name, "NO3-")   ~ "NO3",
+      str_detect(Name, "NH4\\+") ~ "NH4",
+      
+      # Matches #N/A-1 through #N/A-5
+      str_detect(Name, "#N/A-[1-5]") ~ str_replace(Name, "#N/A-", "NA_"),
+      
+      TRUE ~ Name
+    )
+  )
+
+
+
+```
+
+## Create ICR metadata
+
+## Loading
+
+
+```{r}
+
+icr_metadata <- trans_counts %>%
+  filter(!str_detect(SampleID, 'Blk')) %>%
+  distinct(SampleID) %>%
+  mutate(
+    Parent_ID = str_extract(SampleID, "RC2_\\d+"),
+    treatment = case_when(
+      str_detect(SampleID, "ICR") ~ "Water",
+      TRUE ~ "Sediment"),
+    SampleID = str_remove_all(SampleID, "SIR-|_p.*"))
+
+#write_csv(icr_metadata, "output/ICR_metadata_6-26-26.csv")
+
+
+icr_metadata_ft <- icr_metadata 
+
+## Loading tranformations counts raw and normalized by total number of peaks
+
+## Filter transformations counts
+
+trans_counts_ft <- trans_counts 
+#%>% 
+ # mutate(SampleID = str_remove(SampleID, "SIR-")) %>% 
+  #filter(SampleID %in% icr_metadata_ft$SampleID)
+
+
+```
+
+## Prevalence filtering
+
+```{r}
+
+
+## Filter singletons and doubletons
+
+ft_mx <- trans_counts_ft %>% 
+  filter(Counts > 2) %>% 
+  select(SampleID, Formula, Counts) %>% 
+  pivot_wider(names_from = "Formula", values_from = "Counts", values_fill = 0) %>% 
+  column_to_rownames(var = "SampleID")
+
+## Prevalence filtering
+
+raw_matrix_ft <- ft_mx[,colSums(ft_mx > 5)>=nrow(ft_mx)*0.2]
+
+```
+
+
+
+## Tranformations normalization
+
+# Loading CoreMS results
+
+```{r}
+
+files = list.files(path = "CoreMS_input", pattern = ".csv", full.names = TRUE)
+
+
+```
+
+# Calculate total number of peaks per sample. samples are all in files we need to keep file name as sample ID in the final dataframe
+
+```{r}
+# Create an empty dataframe to store the results
+total_peak <- data.frame(SampleID = character(length(files)), num_peak = numeric(length(files)), stringsAsFactors = FALSE)
+
+for (i in 1:length(files)){
+  sample = read_csv(files[i])
+# Extract sampleID from file name for example we need CM_001_ICR-1 from "CoreMS_input/CM_001_ICR-1_p13.corems.csv" or CM_001_SED-1 from "CoreMS_input/CM_001_SED-1_p13.corems.csv"
+  total_peak$SampleID[i] = str_extract(files[i], "RC2_\\d+_(ICR|SED)-\\d+|SSS\\d+_(ICR|SED)-\\d+|CM_(ICR|SED)_Blk-\\d+")
+  total_peak$num_peak[i] = nrow(sample) 
+}
+
+
+write_csv(total_peak, "output/Total_num_peaks_7-2-26.csv")
+
+
+```
+
+
+# Normalize tranformations counts based on total peaks per sample
+
+
+```{r}
+
+trans_counts_norm <- trans_counts %>%
+  mutate(SampleID = str_remove(SampleID, "SIR-|_p.*")) %>%
+  left_join(total_peak, by = 'SampleID') %>%
+  select(!c(Group, Transformation, Perc_Counts)) %>%
+  group_by(SampleID, Formula) %>%
+  mutate(norm_count = Counts/num_peak) %>%
+  left_join(key_fixed, by = c("Formula" = "Name"))
+# 
+ write_csv(trans_counts_norm, "output/Transformation_count_normalized_7-2-26.csv")
+
+```
+
+
+
+## Normalization by each peak in the tranformation
+
+```{r}
+
+
+## Adding transformations counts
+
+trans_total <- trans_counts_norm %>%
+  group_by(SampleID) %>%
+  summarise(
+    num_peak = first(num_peak),
+    n_transformations = sum(Counts, na.rm = TRUE),
+    normalized_transformations = n_transformations / num_peak,
+    .groups = "drop"
+  )
+
+write_csv(trans_total, "output/Total_Transformations_normalized_7_2_26.csv")
+
+
+
+```
+
+
+
+## Exploring patterns -- Box plots
+
+
+```{r}
+
+  
+  total_transf <- trans_total %>%
+    left_join(icr_metadata_ft, by = "SampleID") %>% 
+    filter(!is.na(Parent_ID)) 
+  
+  pd <- position_dodge2(width = 0.75, preserve = "single")
+  
+  pj <- position_jitterdodge(
+    dodge.width  = 0.75,
+    jitter.width = 0.12,
+    jitter.height = 0,
+    seed = 123
+  )
+  
+  
+  box_trans <- total_transf %>%
+    mutate(
+      Parent_ID = as.factor(Parent_ID),
+      treatment = as.factor(treatment)
+    ) %>%
+    ggplot(aes(x = Parent_ID, y = n_transformations, fill = treatment, colour = treatment)) +
+    geom_boxplot(
+      width = 0.6,
+      alpha = 0.55,
+      linewidth = 0.45,
+      outlier.shape = NA,
+      position = pd
+    ) +
+    geom_point(
+      position = pj,
+      size = 1.8,
+      alpha = 0.75,
+      shape = 16
+    ) +
+    scale_color_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_fill_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_y_continuous(
+      expand = expansion(mult = c(0, 0.08)),
+      breaks = scales::breaks_pretty(n = 6)
+    ) +
+    labs(
+      x = "Parent ID",
+      y = 'Total number of transformations',
+      fill = "Treatment",
+      colour = "Treatment"
+    ) +
+    theme_classic(base_size = 8) +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold"),
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold"),
+      axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+      axis.line = element_line(linewidth = 0.45),
+      axis.ticks = element_line(linewidth = 0.45),
+      panel.grid.major.y = element_line(colour = "grey90", linewidth = 0.3),
+      panel.grid.major.x = element_blank()
+    )
+  
+
+box_trans
+
+  
+  box_trans2 <- total_transf %>%
+    mutate(
+      Parent_ID = as.factor(Parent_ID),
+      treatment = as.factor(treatment)
+    ) %>%
+    ggplot(aes(x = Parent_ID, y = normalized_transformations, fill = treatment, colour = treatment)) +
+    geom_boxplot(
+      width = 0.6,
+      alpha = 0.55,
+      linewidth = 0.45,
+      outlier.shape = NA,
+      position = pd
+    ) +
+    geom_point(
+      position = pj,
+      size = 1.8,
+      alpha = 0.75,
+      shape = 16
+    ) +
+    scale_color_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_fill_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_y_continuous(
+      expand = expansion(mult = c(0, 0.08)),
+      breaks = scales::breaks_pretty(n = 6)
+    ) +
+    labs(
+      x = "Parent ID",
+      y = 'Total number of tranformations normalized by peaks number',
+      fill = "Treatment",
+      colour = "Treatment"
+    ) +
+    theme_classic(base_size = 8) +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold"),
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold"),
+      axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+      axis.line = element_line(linewidth = 0.45),
+      axis.ticks = element_line(linewidth = 0.45),
+      panel.grid.major.y = element_line(colour = "grey90", linewidth = 0.3),
+      panel.grid.major.x = element_blank()
+    )
+  
+  box_trans2 
+
+
+## Density plot
+
+  dens_plot <- total_transf %>%
+    mutate(treatment = as.factor(treatment)) %>%
+    ggplot(aes(x = n_transformations, fill = treatment, colour = treatment)) +
+    geom_density(alpha = 0.4, linewidth = 0.6) +
+    geom_rug(aes(colour = treatment), alpha = 0.6, length = unit(0.03, "npc")) +
+    scale_color_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_fill_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_x_continuous(
+      breaks = scales::breaks_pretty(n = 6)
+    ) +
+    labs(
+      x = 'Total number of transformations',
+      y = "Density",
+      fill = "Treatment",
+      colour = "Treatment"
+    ) +
+    theme_classic(base_size = 8) +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold"),
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold"),
+      axis.line = element_line(linewidth = 0.45),
+      axis.ticks = element_line(linewidth = 0.45),
+      panel.grid.major.y = element_line(colour = "grey90", linewidth = 0.3)
+    )
+
+  
+dens_plot
+
+  dens_plot2 <- total_transf %>%
+    mutate(treatment = as.factor(treatment)) %>%
+    ggplot(aes(x = normalized_transformations, fill = treatment, colour = treatment)) +
+    geom_density(alpha = 0.4, linewidth = 0.6) +
+    geom_rug(aes(colour = treatment), alpha = 0.6, length = unit(0.03, "npc")) +
+    scale_color_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_fill_manual(
+      values = c(
+        "Sediment" = "#D55E00",
+        "Water" = "#0072B2"
+      )
+    ) +
+    scale_x_continuous(
+      breaks = scales::breaks_pretty(n = 6)
+    ) +
+    labs(
+      x = 'Total number of tranformations normalized by peaks number',
+      y = "Density",
+      fill = "Treatment",
+      colour = "Treatment"
+    ) +
+    theme_classic(base_size = 8) +
+    theme(
+      plot.title = element_text(hjust = 0.5, face = "bold"),
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      axis.title = element_text(face = "bold"),
+      axis.line = element_line(linewidth = 0.45),
+      axis.ticks = element_line(linewidth = 0.45),
+      panel.grid.major.y = element_line(colour = "grey90", linewidth = 0.3)
+    )
+
+  
+dens_plot2
+
+```
+
+
+################################################################################
+## Network indices
+################################################################################
+
+## Loading netwrok indices
+
+
+```{r}
+
+
+nets_stats_df <- read_csv("output/Netwrok_stats_processed_6-1-2026.csv")
+
+
+net_stats_ready <- nets_stats_df %>% 
+  mutate(SampleID = str_remove(SampleID, "SIR-")) %>% 
+  left_join(icr_metadata_ft) %>% 
+  filter(!is.na(Parent_ID)) %>% 
+  split(.$parameters)
+
+
+
+indx_plots <- imap(net_stats_ready, function(idx, name){
+  
+  net_stats_plot <- idx %>% 
+    filter(!parameters %in% c("num.neg.edges", "num.pos.edges")) %>% 
+    ggplot(aes(x = Parent_ID,
+               y = value,
+               color = treatment))+
+    geom_boxplot()+
+    scale_color_manual(
+      values = c(
+        "DRY" = "#D55E00",
+        "WET" = "#0072B2")
+    )+
+    #facet_wrap(~treatment)+
+    geom_point(position = position_jitter())+
+    labs(y = name)+
+    theme_classic()+
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  return(net_stats_plot)})
+
+
+indx_plots$num.edges
+
+
+iwalk(indx_plots, function(plot, name) {
+  filename <- paste0("output/figures/", name, "_net_indx.png")
+  ggsave(filename, plot, dpi = 300)
+})
+
+
+```
+
+
+## Netwrok indices grouped by treatment
+
+```{r}
+
+
+indx_plots2 <- imap(net_stats_ready, function(idx, name){
+  
+  net_stats_plot <- idx %>% 
+    filter(!parameters %in% c("num.neg.edges", "num.pos.edges")) %>% 
+    ggplot(aes(x = treatment,
+               y = value))+
+    geom_boxplot()+
+    # scale_color_manual(
+    #   values = c(
+    #     "DRY" = "#D55E00",
+    #     "WET" = "#0072B2")
+    # )+
+    #facet_wrap(~treatment)+
+    geom_point(aes(color = Parent_ID),
+               position = position_jitter())+
+    labs(y = name)+
+    theme_classic()+
+    theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  
+  return(net_stats_plot)})
+
+
+indx_plots2$centralization.degree
+
+
+
+```
+
+## NMDS based on network indices
+
+```{r}
+
+
+vars_use <- c(
+  #"connectance",
+  "average.degree",
+  "clustering.coefficient",
+  "average.path.length",
+  #"edge.connectivity",
+  #"no.clusters",
+  "centralization.degree"
+)
+
+
+nets_stats_wide <- nets_stats_df %>% 
+  mutate(SampleID = str_remove(SampleID, "SIR-")) %>% 
+  left_join(icr_metadata_ft) %>% 
+  filter(!is.na(Parent_ID),
+         parameters %in% vars_use) %>% 
+  select(SampleID, Parent_ID, treatment, parameters, value) %>% 
+  distinct() %>% 
+  pivot_wider(names_from = parameters, values_from = value) %>% 
+  drop_na(all_of(vars_use))
+
+
+## Testing for collinearity net indices
+
+dummy_lm <- lm(
+  dummy ~ .,
+  data = nets_stats_wide %>%
+    select(where(is.numeric)) %>%
+    mutate(dummy = 1)
+)
+
+performance::check_collinearity(dummy_lm) %>%
+plot() +
+theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+## Build matrix for ordination
+
+
+net_meta <- nets_stats_wide %>% 
+  select(SampleID, Parent_ID, treatment)
+
+
+net_matrix <- nets_stats_wide %>% 
+  select(SampleID, all_of(vars_use)) %>% 
+  column_to_rownames(var = "SampleID") %>% 
+  decostand(method = "standardize")
+
+
+## NMDS (Euclidean distance on standardized network indices)
+
+
+set.seed(123)
+nmds_net <- metaMDS(
+  net_matrix,
+  distance = "euclidean",
+  k = 2,
+  trymax = 200,
+  autotransform = FALSE,
+  trace = FALSE
+)
+
+
+nmds_net_scores <- as_tibble(scores(nmds_net, display = "sites"), rownames = "SampleID") %>% 
+  left_join(net_meta, by = "SampleID")
+
+
+ggplot(nmds_net_scores, aes(x = NMDS1, y = NMDS2, color = treatment)) +
+  geom_point(size = 2, alpha = 0.9) +
+  stat_ellipse(aes(group = treatment), type = "t", linewidth = 0.8, linetype = 2) +
+  annotate(
+    "text",
+    x = Inf,
+    y = -Inf,
+    label = paste0("Stress = ", round(nmds_net$stress, 3)),
+    hjust = 1.1,
+    vjust = -0.8,
+    size = 4
+  ) +
+  scale_color_manual(values = c("DRY" = "#D55E00", "WET" = "#0072B2")) +
+  labs(
+    title = "NMDS of Network Indices",
+    subtitle = "Euclidean distance on standardized indices",
+    x = "NMDS1",
+    y = "NMDS2",
+    color = "Treatment"
+  ) +
+  coord_equal() +
+  theme_classic(base_size = 13)
+
+
+## PERMANOVA: treatment effect while accounting for Parent_ID (blocked permutations)
+
+perm_treatment_blocked <- adonis2(
+  net_matrix ~ treatment,
+  data = net_meta,
+  method = "euclidean",
+  permutations = 9999,
+  strata = net_meta$Parent_ID,
+  by = "terms"
+)
+
+perm_treatment_blocked %>% 
+  as.data.frame() %>% 
+  rownames_to_column("term") %>% 
+  as_tibble()
+
+
+## Optional companion model to inspect Parent_ID and treatment terms together
+
+perm_terms <- adonis2(
+  net_matrix ~ Parent_ID + treatment,
+  data = net_meta,
+  method = "euclidean",
+  permutations = 9999,
+  by = "terms"
+)
+
+perm_terms %>% 
+  as.data.frame() %>% 
+  rownames_to_column("term") %>% 
+  as_tibble()
+
+
+## Beta dispersion
+
+disp <- betadisper(
+  dist(net_matrix),
+  group = net_meta$treatment
+)
+
+anova(disp)
+permutest(disp)
+
+
+
+```
+
+
+## Testing ratios
+
+
+```{r}
+
+net_trans_ratio <- nets_stats_df %>% 
+  mutate(SampleID = str_remove(SampleID, "SIR-")) %>% 
+  left_join(icr_metadata_ft) %>% 
+  filter(!is.na(Parent_ID),
+         parameters %in% vars_use) %>% 
+  group_by(Parent_ID, treatment, parameters) %>% 
+  summarise(median_net = median(value)) 
+
+
+ggplot(net_trans_ratio,
+       aes(treatment, median_net,
+           group = Parent_ID)) +
+  geom_line(aes(color = Parent_ID),
+            alpha = 0.4,
+            show.legend = FALSE) +
+  geom_point(aes(color = Parent_ID),
+             size = 2,
+             show.legend = FALSE)+
+  facet_wrap(~parameters,
+             scales = 'free_y') +
+  theme_classic()
+
+
+```
+
+
+

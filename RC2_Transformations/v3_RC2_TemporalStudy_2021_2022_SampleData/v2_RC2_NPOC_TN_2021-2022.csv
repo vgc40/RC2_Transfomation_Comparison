@@ -1,0 +1,594 @@
+#Columns,6
+#Header_Rows,12
+Field_Name,Sample_Name,IGSN,Material,00681_NPOC_mg_per_L_as_C,00602_TN_mg_per_L_as_N,Methods_Deviation
+Unit,N/A,N/A,N/A,milligrams_per_liter,milligrams_per_liter,N/A
+Unit_Basis,N/A,N/A,N/A,as_dissolvable_Carbon,as_dissolvable_Nitrogen,N/A
+MethodID_Analysis,N/A,N/A,N/A,NPOC_T_AN_000,TN_T_AN_000,N/A
+MethodID_Inspection,N/A,N/A,N/A,NPOC_T_IN_000,TN_T_IN_000,N/A
+MethodID_Storage,N/A,N/A,N/A,NPOC_T_ST_000,TN_T_ST_000,N/A
+MethodID_Preservation,N/A,N/A,N/A,NPOC_T_PRES_000,TN_T_PRES_000,N/A
+MethodID_Preparation,N/A,N/A,N/A,NPOC_T_PREP_000,TN_T_PREP_000,N/A
+MethodID_DataProcessing,N/A,N/A,N/A,NPOC_T_DP_000,TN_T_DP_000,N/A
+Analysis_DetectionLimit,-9999,-9999,-9999,0.08-0.09,0.06-0.07,N/A
+Analysis_Precision,-9999,-9999,-9999,-9999,-9999,N/A
+Data_Status,N/A,N/A,N/A,ready_to_use,ready_to_use,N/A
+#Start_Data,RC2_0001_OCN-1,10.58052/IEPRS00CY,Liquid>aqueous,1,0.23,N/A
+N/A,RC2_0001_OCN-2,10.58052/IEPRS00CY,Liquid>aqueous,1.03,0.23,N/A
+N/A,RC2_0001_OCN-3,10.58052/IEPRS00CY,Liquid>aqueous,0.97,0.21,N/A
+N/A,RC2_0002_OCN-1,10.58052/IEPRS00CZ,Liquid>aqueous,2.71,0.23,N/A
+N/A,RC2_0002_OCN-2,10.58052/IEPRS00CZ,Liquid>aqueous,2.19,0.15,N/A
+N/A,RC2_0002_OCN-3,10.58052/IEPRS00CZ,Liquid>aqueous,2.56,0.2,N/A
+N/A,RC2_0003_OCN-1,10.58052/IEPRS00D0,Liquid>aqueous,1.83,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,NPOC_CV_030; TN_CV_030; DTL_003
+N/A,RC2_0003_OCN-2,10.58052/IEPRS00D0,Liquid>aqueous,5.12,0.3,NPOC_CV_030; TN_CV_030; NPOC_OUTLIER_000; TN_OUTLIER_000
+N/A,RC2_0003_OCN-3,10.58052/IEPRS00D0,Liquid>aqueous,1.87,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,NPOC_CV_030; TN_CV_030; DTL_003
+N/A,RC2_0004_OCN-1,10.58052/IEPRS00D1,Liquid>aqueous,1.88,0.21,N/A
+N/A,RC2_0004_OCN-2,10.58052/IEPRS00D1,Liquid>aqueous,1.84,0.21,N/A
+N/A,RC2_0004_OCN-3,10.58052/IEPRS00D1,Liquid>aqueous,1.84,0.19,N/A
+N/A,RC2_0005_OCN-1,10.58052/IEPRS00D2,Liquid>aqueous,2.14,0.44,N/A
+N/A,RC2_0005_OCN-2,10.58052/IEPRS00D2,Liquid>aqueous,2.03,0.4,N/A
+N/A,RC2_0005_OCN-3,10.58052/IEPRS00D2,Liquid>aqueous,2.14,0.44,N/A
+N/A,RC2_0006_OCN-1,10.58052/IEPRS00D3,Liquid>aqueous,2.14,0.44,N/A
+N/A,RC2_0006_OCN-2,10.58052/IEPRS00D3,Liquid>aqueous,2.1,0.47,N/A
+N/A,RC2_0006_OCN-3,10.58052/IEPRS00D3,Liquid>aqueous,2.23,0.52,N/A
+N/A,RC2_0007_OCN-1,10.58052/IEPRS00CS,Liquid>aqueous,0.87,0.14,N/A
+N/A,RC2_0007_OCN-2,10.58052/IEPRS00CS,Liquid>aqueous,0.83,0.15,N/A
+N/A,RC2_0007_OCN-3,10.58052/IEPRS00CS,Liquid>aqueous,0.77,0.13,N/A
+N/A,RC2_0008_OCN-1,10.58052/IEPRS00CT,Liquid>aqueous,1.75,0.15,N/A
+N/A,RC2_0008_OCN-2,10.58052/IEPRS00CT,Liquid>aqueous,1.72,0.14,N/A
+N/A,RC2_0008_OCN-3,10.58052/IEPRS00CT,Liquid>aqueous,1.79,0.16,N/A
+N/A,RC2_0009_OCN-1,10.58052/IEPRS00CU,Liquid>aqueous,1.48,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0009_OCN-2,10.58052/IEPRS00CU,Liquid>aqueous,1.48,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0009_OCN-3,10.58052/IEPRS00CU,Liquid>aqueous,1.52,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0010_OCN-1,10.58052/IEPRS00CV,Liquid>aqueous,1.58,0.2,N/A
+N/A,RC2_0010_OCN-2,10.58052/IEPRS00CV,Liquid>aqueous,1.66,0.22,N/A
+N/A,RC2_0010_OCN-3,10.58052/IEPRS00CV,Liquid>aqueous,1.58,0.19,N/A
+N/A,RC2_0011_OCN-1,10.58052/IEPRS00CW,Liquid>aqueous,1.89,0.37,N/A
+N/A,RC2_0011_OCN-2,10.58052/IEPRS00CW,Liquid>aqueous,1.85,0.38,N/A
+N/A,RC2_0011_OCN-3,10.58052/IEPRS00CW,Liquid>aqueous,1.87,0.38,N/A
+N/A,RC2_0012_OCN-1,10.58052/IEPRS00CX,Liquid>aqueous,1.96,0.49,N/A
+N/A,RC2_0012_OCN-2,10.58052/IEPRS00CX,Liquid>aqueous,2.02,0.48,N/A
+N/A,RC2_0012_OCN-3,10.58052/IEPRS00CX,Liquid>aqueous,1.96,0.48,N/A
+N/A,RC2_0013_OCN-1,10.58052/IEPRS00CM,Liquid>aqueous,0.69,0.133,N/A
+N/A,RC2_0013_OCN-2,10.58052/IEPRS00CM,Liquid>aqueous,0.87,0.14,N/A
+N/A,RC2_0013_OCN-3,10.58052/IEPRS00CM,Liquid>aqueous,0.79,0.148,N/A
+N/A,RC2_0014_OCN-1,10.58052/IEPRS00CN,Liquid>aqueous,1.6,0.203,N/A
+N/A,RC2_0014_OCN-2,10.58052/IEPRS00CN,Liquid>aqueous,1.48,0.21,N/A
+N/A,RC2_0014_OCN-3,10.58052/IEPRS00CN,Liquid>aqueous,1.54,0.202,N/A
+N/A,RC2_0015_OCN-1,10.58052/IEPRS00CO,Liquid>aqueous,1.29,0.0591,N/A
+N/A,RC2_0015_OCN-2,10.58052/IEPRS00CO,Liquid>aqueous,1.34,0.0741,N/A
+N/A,RC2_0015_OCN-3,10.58052/IEPRS00CO,Liquid>aqueous,1.35,0.0621,N/A
+N/A,RC2_0016_OCN-1,10.58052/IEPRS00CP,Liquid>aqueous,1.72,0.2,N/A
+N/A,RC2_0016_OCN-2,10.58052/IEPRS00CP,Liquid>aqueous,1.66,0.194,N/A
+N/A,RC2_0016_OCN-3,10.58052/IEPRS00CP,Liquid>aqueous,1.59,0.18,N/A
+N/A,RC2_0017_OCN-1,10.58052/IEPRS00CQ,Liquid>aqueous,1.77,0.42,N/A
+N/A,RC2_0017_OCN-2,10.58052/IEPRS00CQ,Liquid>aqueous,1.88,0.434,N/A
+N/A,RC2_0017_OCN-3,10.58052/IEPRS00CQ,Liquid>aqueous,1.83,0.438,N/A
+N/A,RC2_0018_OCN-1,10.58052/IEPRS00CR,Liquid>aqueous,1.81,0.502,N/A
+N/A,RC2_0018_OCN-2,10.58052/IEPRS00CR,Liquid>aqueous,1.79,0.517,N/A
+N/A,RC2_0018_OCN-3,10.58052/IEPRS00CR,Liquid>aqueous,1.81,0.525,N/A
+N/A,RC2_0019_OCN-1,10.58052/IEPRS00CG,Liquid>aqueous,0.83,0.2,N/A
+N/A,RC2_0019_OCN-2,10.58052/IEPRS00CG,Liquid>aqueous,0.87,0.2,N/A
+N/A,RC2_0019_OCN-3,10.58052/IEPRS00CG,Liquid>aqueous,0.9,0.19,N/A
+N/A,RC2_0020_OCN-1,10.58052/IEPRS00CH,Liquid>aqueous,1.5,0.24,N/A
+N/A,RC2_0020_OCN-2,10.58052/IEPRS00CH,Liquid>aqueous,1.49,0.24,N/A
+N/A,RC2_0020_OCN-3,10.58052/IEPRS00CH,Liquid>aqueous,1.55,0.24,N/A
+N/A,RC2_0021_OCN-1,10.58052/IEPRS00CI,Liquid>aqueous,1.32,0.12,N/A
+N/A,RC2_0021_OCN-2,10.58052/IEPRS00CI,Liquid>aqueous,1.29,0.12,N/A
+N/A,RC2_0021_OCN-3,10.58052/IEPRS00CI,Liquid>aqueous,1.32,0.12,N/A
+N/A,RC2_0022_OCN-1,10.58052/IEPRS00CJ,Liquid>aqueous,1.63,0.25,N/A
+N/A,RC2_0022_OCN-2,10.58052/IEPRS00CJ,Liquid>aqueous,1.65,0.25,N/A
+N/A,RC2_0022_OCN-3,10.58052/IEPRS00CJ,Liquid>aqueous,1.65,0.25,N/A
+N/A,RC2_0023_OCN-1,10.58052/IEPRS00CK,Liquid>aqueous,1.98,0.53,N/A
+N/A,RC2_0023_OCN-2,10.58052/IEPRS00CK,Liquid>aqueous,1.95,0.58,N/A
+N/A,RC2_0023_OCN-3,10.58052/IEPRS00CK,Liquid>aqueous,1.81,0.53,N/A
+N/A,RC2_0024_OCN-1,10.58052/IEPRS00CL,Liquid>aqueous,1.82,0.63,N/A
+N/A,RC2_0024_OCN-2,10.58052/IEPRS00CL,Liquid>aqueous,1.94,0.65,N/A
+N/A,RC2_0024_OCN-3,10.58052/IEPRS00CL,Liquid>aqueous,1.96,0.66,N/A
+N/A,RC2_0025_OCN-1,10.58052/IEPRS00CA,Liquid>aqueous,0.84,0.18,N/A
+N/A,RC2_0025_OCN-2,10.58052/IEPRS00CA,Liquid>aqueous,0.85,0.17,N/A
+N/A,RC2_0025_OCN-3,10.58052/IEPRS00CA,Liquid>aqueous,0.86,0.17,N/A
+N/A,RC2_0026_OCN-1,10.58052/IEPRS00CB,Liquid>aqueous,1.28,0.25,N/A
+N/A,RC2_0026_OCN-2,10.58052/IEPRS00CB,Liquid>aqueous,1.35,0.25,N/A
+N/A,RC2_0026_OCN-3,10.58052/IEPRS00CB,Liquid>aqueous,1.29,0.27,N/A
+N/A,RC2_0027_OCN-1,10.58052/IEPRS00CC,Liquid>aqueous,1.24,0.15,N/A
+N/A,RC2_0027_OCN-2,10.58052/IEPRS00CC,Liquid>aqueous,1.2,0.13,N/A
+N/A,RC2_0027_OCN-3,10.58052/IEPRS00CC,Liquid>aqueous,1.2,0.13,N/A
+N/A,RC2_0028_OCN-1,10.58052/IEPRS00CD,Liquid>aqueous,1.59,0.24,N/A
+N/A,RC2_0028_OCN-2,10.58052/IEPRS00CD,Liquid>aqueous,1.57,0.24,N/A
+N/A,RC2_0028_OCN-3,10.58052/IEPRS00CD,Liquid>aqueous,1.51,0.25,N/A
+N/A,RC2_0029_OCN-1,10.58052/IEPRS00CE,Liquid>aqueous,1.77,0.44,N/A
+N/A,RC2_0029_OCN-2,10.58052/IEPRS00CE,Liquid>aqueous,1.82,0.43,N/A
+N/A,RC2_0029_OCN-3,10.58052/IEPRS00CE,Liquid>aqueous,1.79,0.42,N/A
+N/A,RC2_0030_OCN-1,10.58052/IEPRS00CF,Liquid>aqueous,1.83,0.52,N/A
+N/A,RC2_0030_OCN-2,10.58052/IEPRS00CF,Liquid>aqueous,1.82,0.5,N/A
+N/A,RC2_0030_OCN-3,10.58052/IEPRS00CF,Liquid>aqueous,1.78,0.52,N/A
+N/A,RC2_0031_OCN-1,10.58052/IEPRS00C4,Liquid>aqueous,0.79,0.11,N/A
+N/A,RC2_0031_OCN-2,10.58052/IEPRS00C4,Liquid>aqueous,0.76,0.12,N/A
+N/A,RC2_0031_OCN-3,10.58052/IEPRS00C4,Liquid>aqueous,0.76,0.13,N/A
+N/A,RC2_0032_OCN-1,10.58052/IEPRS00C5,Liquid>aqueous,1.21,0.19,N/A
+N/A,RC2_0032_OCN-2,10.58052/IEPRS00C5,Liquid>aqueous,1.27,0.2,N/A
+N/A,RC2_0032_OCN-3,10.58052/IEPRS00C5,Liquid>aqueous,1.25,0.21,N/A
+N/A,RC2_0033_OCN-1,10.58052/IEPRS00C6,Liquid>aqueous,1.12,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0033_OCN-2,10.58052/IEPRS00C6,Liquid>aqueous,1.12,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0033_OCN-3,10.58052/IEPRS00C6,Liquid>aqueous,1.11,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0034_OCN-1,10.58052/IEPRS00C7,Liquid>aqueous,1.3,0.14,N/A
+N/A,RC2_0034_OCN-2,10.58052/IEPRS00C7,Liquid>aqueous,1.46,0.17,N/A
+N/A,RC2_0034_OCN-3,10.58052/IEPRS00C7,Liquid>aqueous,1.25,0.16,N/A
+N/A,RC2_0035_OCN-1,10.58052/IEPRS00C8,Liquid>aqueous,1.59,0.39,N/A
+N/A,RC2_0035_OCN-2,10.58052/IEPRS00C8,Liquid>aqueous,1.49,0.36,N/A
+N/A,RC2_0035_OCN-3,10.58052/IEPRS00C8,Liquid>aqueous,1.58,0.35,N/A
+N/A,RC2_0036_OCN-1,10.58052/IEPRS00C9,Liquid>aqueous,1.63,0.43,N/A
+N/A,RC2_0036_OCN-2,10.58052/IEPRS00C9,Liquid>aqueous,-9999,-9999,VB_OCN_001
+N/A,RC2_0036_OCN-3,10.58052/IEPRS00C9,Liquid>aqueous,1.54,0.43,N/A
+N/A,RC2_0037_OCN-1,10.58052/IEPRS00BY,Liquid>aqueous,1.58,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0037_OCN-2,10.58052/IEPRS00BY,Liquid>aqueous,1.59,0.12,N/A
+N/A,RC2_0037_OCN-3,10.58052/IEPRS00BY,Liquid>aqueous,1.57,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0038_OCN-1,10.58052/IEPRS00BZ,Liquid>aqueous,1.33,0.17,N/A
+N/A,RC2_0038_OCN-2,10.58052/IEPRS00BZ,Liquid>aqueous,1.3,0.17,N/A
+N/A,RC2_0038_OCN-3,10.58052/IEPRS00BZ,Liquid>aqueous,1.34,0.17,N/A
+N/A,RC2_0039_OCN-1,10.58052/IEPRS00C0,Liquid>aqueous,1.51,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0039_OCN-2,10.58052/IEPRS00C0,Liquid>aqueous,1.53,0.11,N/A
+N/A,RC2_0039_OCN-3,10.58052/IEPRS00C0,Liquid>aqueous,1.48,0.11,N/A
+N/A,RC2_0040_OCN-1,10.58052/IEPRS00C1,Liquid>aqueous,1.67,0.17,N/A
+N/A,RC2_0040_OCN-2,10.58052/IEPRS00C1,Liquid>aqueous,1.52,0.16,N/A
+N/A,RC2_0040_OCN-3,10.58052/IEPRS00C1,Liquid>aqueous,1.59,0.17,N/A
+N/A,RC2_0041_OCN-1,10.58052/IEPRS00C2,Liquid>aqueous,1.63,0.34,N/A
+N/A,RC2_0041_OCN-2,10.58052/IEPRS00C2,Liquid>aqueous,1.66,0.34,N/A
+N/A,RC2_0041_OCN-3,10.58052/IEPRS00C2,Liquid>aqueous,1.57,0.34,N/A
+N/A,RC2_0042_OCN-1,10.58052/IEPRS00C3,Liquid>aqueous,1.56,0.42,N/A
+N/A,RC2_0042_OCN-2,10.58052/IEPRS00C3,Liquid>aqueous,1.62,0.42,N/A
+N/A,RC2_0042_OCN-3,10.58052/IEPRS00C3,Liquid>aqueous,1.57,0.44,N/A
+N/A,RC2_0043_OCN-1,10.58052/IEPRS00BT,Liquid>aqueous,0.57,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0043_OCN-2,10.58052/IEPRS00BT,Liquid>aqueous,0.6,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0043_OCN-3,10.58052/IEPRS00BT,Liquid>aqueous,0.61,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0044_OCN-1,10.58052/IEPRS00BU,Liquid>aqueous,0.98,0.13,N/A
+N/A,RC2_0044_OCN-2,10.58052/IEPRS00BU,Liquid>aqueous,1.04,0.14,N/A
+N/A,RC2_0044_OCN-3,10.58052/IEPRS00BU,Liquid>aqueous,1.11,0.14,N/A
+N/A,RC2_0045_OCN-1,10.58052/IEPRS00BV,Liquid>aqueous,1.1,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0045_OCN-2,10.58052/IEPRS00BV,Liquid>aqueous,1.05,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0045_OCN-3,10.58052/IEPRS00BV,Liquid>aqueous,1.07,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0046_OCN-1,10.58052/IEPRS00BW,Liquid>aqueous,1.37,0.23,N/A
+N/A,RC2_0046_OCN-2,10.58052/IEPRS00BW,Liquid>aqueous,1.39,0.24,N/A
+N/A,RC2_0046_OCN-3,10.58052/IEPRS00BW,Liquid>aqueous,1.42,0.25,N/A
+N/A,RC2_0048_OCN-1,10.58052/IEPRS00BX,Liquid>aqueous,1.71,0.64,N/A
+N/A,RC2_0048_OCN-2,10.58052/IEPRS00BX,Liquid>aqueous,1.69,0.66,N/A
+N/A,RC2_0048_OCN-3,10.58052/IEPRS00BX,Liquid>aqueous,1.66,0.66,N/A
+N/A,RC2_0049_OCN-1,10.58052/IEPRS00D4,Liquid>aqueous,1.63,0.44,N/A
+N/A,RC2_0049_OCN-2,10.58052/IEPRS00D4,Liquid>aqueous,1.63,0.43,N/A
+N/A,RC2_0049_OCN-3,10.58052/IEPRS00D4,Liquid>aqueous,1.62,0.43,N/A
+N/A,RC2_0050_OCN-1,10.58052/IEPRS00D5,Liquid>aqueous,0.71,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0050_OCN-2,10.58052/IEPRS00D5,Liquid>aqueous,0.71,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0050_OCN-3,10.58052/IEPRS00D5,Liquid>aqueous,0.68,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0051_OCN-1,10.58052/IEPRS00D6,Liquid>aqueous,1.07,0.11,N/A
+N/A,RC2_0051_OCN-2,10.58052/IEPRS00D6,Liquid>aqueous,1.08,0.11,N/A
+N/A,RC2_0051_OCN-3,10.58052/IEPRS00D6,Liquid>aqueous,1.15,0.11,N/A
+N/A,RC2_0052_OCN-1,10.58052/IEPRS00D7,Liquid>aqueous,1.07,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0052_OCN-2,10.58052/IEPRS00D7,Liquid>aqueous,0.97,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0052_OCN-3,10.58052/IEPRS00D7,Liquid>aqueous,1.02,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0053_OCN-1,10.58052/IEPRS00D8,Liquid>aqueous,1.35,0.2,N/A
+N/A,RC2_0053_OCN-2,10.58052/IEPRS00D8,Liquid>aqueous,1.34,0.22,N/A
+N/A,RC2_0053_OCN-3,10.58052/IEPRS00D8,Liquid>aqueous,1.33,0.21,N/A
+N/A,RC2_0054_OCN-1,10.58052/IEPRS00D9,Liquid>aqueous,1.83,0.49,N/A
+N/A,RC2_0054_OCN-2,10.58052/IEPRS00D9,Liquid>aqueous,1.77,0.5,N/A
+N/A,RC2_0054_OCN-3,10.58052/IEPRS00D9,Liquid>aqueous,1.69,0.51,N/A
+N/A,RC2_0055_OCN-1,10.58052/IEPRS00DA,Liquid>aqueous,0.71,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0055_OCN-2,10.58052/IEPRS00DA,Liquid>aqueous,0.67,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0055_OCN-3,10.58052/IEPRS00DA,Liquid>aqueous,0.69,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0056_OCN-1,10.58052/IEPRS00DB,Liquid>aqueous,0.99,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0056_OCN-2,10.58052/IEPRS00DB,Liquid>aqueous,0.97,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0056_OCN-3,10.58052/IEPRS00DB,Liquid>aqueous,0.95,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0057_OCN-1,10.58052/IEPRS00DC,Liquid>aqueous,0.89,TN_Below_0.06_ppm_LOD|0.04_ppm_Raw_Not_Corrected|0.04_ppm_Final_Corrected,DTL_003
+N/A,RC2_0057_OCN-2,10.58052/IEPRS00DC,Liquid>aqueous,0.92,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0057_OCN-3,10.58052/IEPRS00DC,Liquid>aqueous,0.9,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0058_OCN-1,10.58052/IEPRS00DD,Liquid>aqueous,1.29,0.16,N/A
+N/A,RC2_0058_OCN-2,10.58052/IEPRS00DD,Liquid>aqueous,1.21,0.14,N/A
+N/A,RC2_0058_OCN-3,10.58052/IEPRS00DD,Liquid>aqueous,1.18,0.14,N/A
+N/A,RC2_0059_OCN-1,10.58052/IEPRS00DE,Liquid>aqueous,1.52,0.4,N/A
+N/A,RC2_0059_OCN-2,10.58052/IEPRS00DE,Liquid>aqueous,1.48,0.42,N/A
+N/A,RC2_0059_OCN-3,10.58052/IEPRS00DE,Liquid>aqueous,1.56,0.4,N/A
+N/A,RC2_0060_OCN-1,10.58052/IEPRS00DF,Liquid>aqueous,1.5,0.5,N/A
+N/A,RC2_0060_OCN-2,10.58052/IEPRS00DF,Liquid>aqueous,1.47,0.56,N/A
+N/A,RC2_0060_OCN-3,10.58052/IEPRS00DF,Liquid>aqueous,1.56,0.52,N/A
+N/A,RC2_0061_OCN-1,10.58052/IEPRS00DG,Liquid>aqueous,0.54,TN_Below_0.06_ppm_LOD|0.01_ppm_Raw_Not_Corrected|0.01_ppm_Final_Corrected,TN_CV_030; DTL_003; TN_OUTLIER_000
+N/A,RC2_0061_OCN-2,10.58052/IEPRS00DG,Liquid>aqueous,0.56,TN_Below_0.06_ppm_LOD|0.04_ppm_Raw_Not_Corrected|0.04_ppm_Final_Corrected,TN_CV_030; DTL_003
+N/A,RC2_0061_OCN-3,10.58052/IEPRS00DG,Liquid>aqueous,0.57,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,TN_CV_030; DTL_003
+N/A,RC2_0062_OCN-1,10.58052/IEPRS00DH,Liquid>aqueous,0.95,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0062_OCN-2,10.58052/IEPRS00DH,Liquid>aqueous,0.92,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0062_OCN-3,10.58052/IEPRS00DH,Liquid>aqueous,0.94,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0063_OCN-1,10.58052/IEPRS00DI,Liquid>aqueous,0.97,TN_Below_0.06_ppm_LOD|0_ppm_Raw_Not_Corrected|0_ppm_Final_Corrected,TN_CV_030; DTL_003; TN_OUTLIER_000
+N/A,RC2_0063_OCN-2,10.58052/IEPRS00DI,Liquid>aqueous,1.02,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,TN_CV_030; DTL_003
+N/A,RC2_0063_OCN-3,10.58052/IEPRS00DI,Liquid>aqueous,0.98,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,TN_CV_030; DTL_003
+N/A,RC2_0064_OCN-1,10.58052/IEPRS00DJ,Liquid>aqueous,1.31,0.21,N/A
+N/A,RC2_0064_OCN-2,10.58052/IEPRS00DJ,Liquid>aqueous,1.29,0.22,N/A
+N/A,RC2_0064_OCN-3,10.58052/IEPRS00DJ,Liquid>aqueous,1.27,0.24,N/A
+N/A,RC2_0065_OCN-1,10.58052/IEPRS00DK,Liquid>aqueous,1.87,1.25,N/A
+N/A,RC2_0065_OCN-2,10.58052/IEPRS00DK,Liquid>aqueous,1.89,1.23,N/A
+N/A,RC2_0065_OCN-3,10.58052/IEPRS00DK,Liquid>aqueous,1.93,1.24,N/A
+N/A,RC2_0066_OCN-1,10.58052/IEPRS00DL,Liquid>aqueous,1.91,0.83,N/A
+N/A,RC2_0066_OCN-2,10.58052/IEPRS00DL,Liquid>aqueous,1.84,0.88,N/A
+N/A,RC2_0066_OCN-3,10.58052/IEPRS00DL,Liquid>aqueous,1.91,0.85,N/A
+N/A,RC2_0067_OCN-1,10.58052/IEPRS00DM,Liquid>aqueous,0.44,TN_Below_0.06_ppm_LOD|0_ppm_Raw_Not_Corrected|0_ppm_Final_Corrected,TN_CV_030; DTL_003; TN_OUTLIER_000
+N/A,RC2_0067_OCN-2,10.58052/IEPRS00DM,Liquid>aqueous,0.48,TN_Below_0.06_ppm_LOD|0.03_ppm_Raw_Not_Corrected|0.03_ppm_Final_Corrected,TN_CV_030; DTL_003
+N/A,RC2_0067_OCN-3,10.58052/IEPRS00DM,Liquid>aqueous,0.5,TN_Below_0.06_ppm_LOD|0.04_ppm_Raw_Not_Corrected|0.04_ppm_Final_Corrected,TN_CV_030; DTL_003
+N/A,RC2_0068_OCN-1,10.58052/IEPRS00DN,Liquid>aqueous,0.96,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0068_OCN-2,10.58052/IEPRS00DN,Liquid>aqueous,0.97,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0068_OCN-3,10.58052/IEPRS00DN,Liquid>aqueous,0.99,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0069_OCN-1,10.58052/IEPRS00DO,Liquid>aqueous,1.09,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0069_OCN-2,10.58052/IEPRS00DO,Liquid>aqueous,0.98,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0069_OCN-3,10.58052/IEPRS00DO,Liquid>aqueous,1.04,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0070_OCN-1,10.58052/IEPRS00DP,Liquid>aqueous,1.25,0.19,N/A
+N/A,RC2_0070_OCN-2,10.58052/IEPRS00DP,Liquid>aqueous,1.25,0.2,N/A
+N/A,RC2_0070_OCN-3,10.58052/IEPRS00DP,Liquid>aqueous,1.28,0.21,N/A
+N/A,RC2_0071_OCN-1,10.58052/IEPRS00DQ,Liquid>aqueous,1.88,1.26,N/A
+N/A,RC2_0071_OCN-2,10.58052/IEPRS00DQ,Liquid>aqueous,1.87,1.24,N/A
+N/A,RC2_0071_OCN-3,10.58052/IEPRS00DQ,Liquid>aqueous,1.88,1.27,N/A
+N/A,RC2_0072_OCN-1,10.58052/IEPRS00DR,Liquid>aqueous,1.93,0.81,N/A
+N/A,RC2_0072_OCN-2,10.58052/IEPRS00DR,Liquid>aqueous,1.96,0.79,N/A
+N/A,RC2_0072_OCN-3,10.58052/IEPRS00DR,Liquid>aqueous,1.91,0.81,N/A
+N/A,RC2_0073_OCN-1,10.58052/IEPRS00DX,Liquid>aqueous,1.86,0.75,N/A
+N/A,RC2_0073_OCN-2,10.58052/IEPRS00DX,Liquid>aqueous,1.87,0.73,N/A
+N/A,RC2_0073_OCN-3,10.58052/IEPRS00DX,Liquid>aqueous,1.91,0.72,N/A
+N/A,RC2_0074_OCN-1,10.58052/IEPRS00DW,Liquid>aqueous,1.8,1.28,N/A
+N/A,RC2_0074_OCN-2,10.58052/IEPRS00DW,Liquid>aqueous,1.76,1.24,N/A
+N/A,RC2_0074_OCN-3,10.58052/IEPRS00DW,Liquid>aqueous,1.88,1.22,N/A
+N/A,RC2_0075_OCN-1,10.58052/IEPRS00DV,Liquid>aqueous,1.22,0.2,N/A
+N/A,RC2_0075_OCN-2,10.58052/IEPRS00DV,Liquid>aqueous,1.23,0.18,N/A
+N/A,RC2_0075_OCN-3,10.58052/IEPRS00DV,Liquid>aqueous,1.17,0.18,N/A
+N/A,RC2_0076_OCN-1,10.58052/IEPRS00DU,Liquid>aqueous,0.97,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0076_OCN-2,10.58052/IEPRS00DU,Liquid>aqueous,0.97,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0076_OCN-3,10.58052/IEPRS00DU,Liquid>aqueous,0.97,TN_Below_0.1_ppm_Standard|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0077_OCN-1,10.58052/IEPRS00DT,Liquid>aqueous,0.91,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0077_OCN-2,10.58052/IEPRS00DT,Liquid>aqueous,0.93,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0077_OCN-3,10.58052/IEPRS00DT,Liquid>aqueous,0.93,TN_Below_0.06_ppm_LOD|0.06_ppm_Raw_Not_Corrected|0.06_ppm_Final_Corrected,DTL_003
+N/A,RC2_0078_OCN-1,10.58052/IEPRS00DS,Liquid>aqueous,0.45,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0078_OCN-2,10.58052/IEPRS00DS,Liquid>aqueous,0.43,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0078_OCN-3,10.58052/IEPRS00DS,Liquid>aqueous,0.45,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0079_OCN-1,10.58052/IEPRS00DY,Liquid>aqueous,0.46,TN_Below_0.06_ppm_LOD|0.05_ppm_Raw_Not_Corrected|0.05_ppm_Final_Corrected,DTL_003
+N/A,RC2_0079_OCN-2,10.58052/IEPRS00DY,Liquid>aqueous,0.47,TN_Below_0.06_ppm_LOD|0.04_ppm_Raw_Not_Corrected|0.04_ppm_Final_Corrected,DTL_003
+N/A,RC2_0079_OCN-3,10.58052/IEPRS00DY,Liquid>aqueous,0.45,TN_Below_0.06_ppm_LOD|0.04_ppm_Raw_Not_Corrected|0.04_ppm_Final_Corrected,DTL_003
+N/A,RC2_0080_OCN-1,10.58052/IEPRS00DZ,Liquid>aqueous,1.03,0.11,N/A
+N/A,RC2_0080_OCN-2,10.58052/IEPRS00DZ,Liquid>aqueous,1.14,0.12,N/A
+N/A,RC2_0080_OCN-3,10.58052/IEPRS00DZ,Liquid>aqueous,1.11,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0081_OCN-1,10.58052/IEPRS00E0,Liquid>aqueous,1.09,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0081_OCN-2,10.58052/IEPRS00E0,Liquid>aqueous,1.06,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0081_OCN-3,10.58052/IEPRS00E0,Liquid>aqueous,1.05,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0082_OCN-1,10.58052/IEPRS00E1,Liquid>aqueous,1.25,0.22,N/A
+N/A,RC2_0082_OCN-2,10.58052/IEPRS00E1,Liquid>aqueous,1.22,0.21,N/A
+N/A,RC2_0082_OCN-3,10.58052/IEPRS00E1,Liquid>aqueous,1.25,0.2,N/A
+N/A,RC2_0083_OCN-1,10.58052/IEPRS00E2,Liquid>aqueous,1.76,1.25,N/A
+N/A,RC2_0083_OCN-2,10.58052/IEPRS00E2,Liquid>aqueous,1.89,1.25,N/A
+N/A,RC2_0083_OCN-3,10.58052/IEPRS00E2,Liquid>aqueous,1.8,1.27,N/A
+N/A,RC2_0084_OCN-1,10.58052/IEPRS00E3,Liquid>aqueous,1.84,0.96,N/A
+N/A,RC2_0084_OCN-2,10.58052/IEPRS00E3,Liquid>aqueous,1.85,0.96,N/A
+N/A,RC2_0084_OCN-3,10.58052/IEPRS00E3,Liquid>aqueous,1.86,0.96,N/A
+N/A,RC2_0085_OCN-1,10.58052/IEPRS00E4,Liquid>aqueous,0.71,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0085_OCN-2,10.58052/IEPRS00E4,Liquid>aqueous,0.72,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0085_OCN-3,10.58052/IEPRS00E4,Liquid>aqueous,0.75,0.1,N/A
+N/A,RC2_0086_OCN-1,10.58052/IEPRS00E5,Liquid>aqueous,1.07,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0086_OCN-2,10.58052/IEPRS00E5,Liquid>aqueous,1.16,0.12,N/A
+N/A,RC2_0086_OCN-3,10.58052/IEPRS00E5,Liquid>aqueous,1.09,0.1,N/A
+N/A,RC2_0087_OCN-1,10.58052/IEPRS00E6,Liquid>aqueous,1.22,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0087_OCN-2,10.58052/IEPRS00E6,Liquid>aqueous,1.21,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0087_OCN-3,10.58052/IEPRS00E6,Liquid>aqueous,1.15,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0088_OCN-1,10.58052/IEPRS00E7,Liquid>aqueous,1.47,0.24,N/A
+N/A,RC2_0088_OCN-2,10.58052/IEPRS00E7,Liquid>aqueous,1.52,0.28,N/A
+N/A,RC2_0088_OCN-3,10.58052/IEPRS00E7,Liquid>aqueous,1.46,0.24,N/A
+N/A,RC2_0089_OCN-1,10.58052/IEPRS00E8,Liquid>aqueous,2.09,1.5,N/A
+N/A,RC2_0089_OCN-2,10.58052/IEPRS00E8,Liquid>aqueous,1.99,1.45,N/A
+N/A,RC2_0089_OCN-3,10.58052/IEPRS00E8,Liquid>aqueous,1.94,1.45,N/A
+N/A,RC2_0090_OCN-1,10.58052/IEPRS00E9,Liquid>aqueous,1.93,1.05,N/A
+N/A,RC2_0090_OCN-2,10.58052/IEPRS00E9,Liquid>aqueous,1.99,1,N/A
+N/A,RC2_0090_OCN-3,10.58052/IEPRS00E9,Liquid>aqueous,2.02,1.01,N/A
+N/A,RC2_0091_OCN-1,10.58052/IEPRS00EF,Liquid>aqueous,0.4,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0091_OCN-2,10.58052/IEPRS00EF,Liquid>aqueous,0.4,TN_Below_0.07_ppm_LOD|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0091_OCN-3,10.58052/IEPRS00EF,Liquid>aqueous,0.38,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0092_OCN-1,10.58052/IEPRS00EE,Liquid>aqueous,0.89,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0092_OCN-2,10.58052/IEPRS00EE,Liquid>aqueous,0.82,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0092_OCN-3,10.58052/IEPRS00EE,Liquid>aqueous,0.8,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0093_OCN-1,10.58052/IEPRS00ED,Liquid>aqueous,1.03,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0093_OCN-2,10.58052/IEPRS00ED,Liquid>aqueous,1.07,0.13,N/A
+N/A,RC2_0093_OCN-3,10.58052/IEPRS00ED,Liquid>aqueous,1.08,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0094_OCN-1,10.58052/IEPRS00EC,Liquid>aqueous,1.24,0.26,N/A
+N/A,RC2_0094_OCN-2,10.58052/IEPRS00EC,Liquid>aqueous,1.26,0.23,N/A
+N/A,RC2_0094_OCN-3,10.58052/IEPRS00EC,Liquid>aqueous,1.24,0.23,N/A
+N/A,RC2_0095_OCN-1,10.58052/IEPRS00EB,Liquid>aqueous,1.81,1.65,N/A
+N/A,RC2_0095_OCN-2,10.58052/IEPRS00EB,Liquid>aqueous,1.82,1.68,N/A
+N/A,RC2_0095_OCN-3,10.58052/IEPRS00EB,Liquid>aqueous,1.8,1.72,N/A
+N/A,RC2_0096_OCN-1,10.58052/IEPRS00EA,Liquid>aqueous,1.81,1.32,N/A
+N/A,RC2_0096_OCN-2,10.58052/IEPRS00EA,Liquid>aqueous,1.82,1.28,N/A
+N/A,RC2_0096_OCN-3,10.58052/IEPRS00EA,Liquid>aqueous,1.81,1.28,N/A
+N/A,RC2_0097_OCN-1,10.58052/IEPRS00EG,Liquid>aqueous,1.81,1.22,N/A
+N/A,RC2_0097_OCN-2,10.58052/IEPRS00EG,Liquid>aqueous,1.78,1.25,N/A
+N/A,RC2_0097_OCN-3,10.58052/IEPRS00EG,Liquid>aqueous,1.78,1.27,N/A
+N/A,RC2_0098_OCN-1,10.58052/IEPRS00EH,Liquid>aqueous,1.79,1.39,N/A
+N/A,RC2_0098_OCN-2,10.58052/IEPRS00EH,Liquid>aqueous,1.75,1.4,N/A
+N/A,RC2_0098_OCN-3,10.58052/IEPRS00EH,Liquid>aqueous,1.74,1.37,N/A
+N/A,RC2_0099_OCN-1,10.58052/IEPRS00EI,Liquid>aqueous,1.36,0.27,N/A
+N/A,RC2_0099_OCN-2,10.58052/IEPRS00EI,Liquid>aqueous,1.53,0.28,N/A
+N/A,RC2_0099_OCN-3,10.58052/IEPRS00EI,Liquid>aqueous,1.36,0.28,N/A
+N/A,RC2_0100_OCN-1,10.58052/IEPRS00EJ,Liquid>aqueous,0.99,0.11,N/A
+N/A,RC2_0100_OCN-2,10.58052/IEPRS00EJ,Liquid>aqueous,1.04,0.13,N/A
+N/A,RC2_0100_OCN-3,10.58052/IEPRS00EJ,Liquid>aqueous,0.98,0.11,N/A
+N/A,RC2_0101_OCN-1,10.58052/IEPRS00EO,Liquid>aqueous,0.44,TN_Below_0.07_ppm_LOD|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0101_OCN-2,10.58052/IEPRS00EO,Liquid>aqueous,0.43,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0101_OCN-3,10.58052/IEPRS00EO,Liquid>aqueous,0.44,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0103_OCN-1,10.58052/IEPRS00EN,Liquid>aqueous,0.98,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0103_OCN-2,10.58052/IEPRS00EN,Liquid>aqueous,1.04,0.14,N/A
+N/A,RC2_0103_OCN-3,10.58052/IEPRS00EN,Liquid>aqueous,0.98,0.11,N/A
+N/A,RC2_0104_OCN-1,10.58052/IEPRS00EM,Liquid>aqueous,1.41,0.3,N/A
+N/A,RC2_0104_OCN-2,10.58052/IEPRS00EM,Liquid>aqueous,1.38,0.31,N/A
+N/A,RC2_0104_OCN-3,10.58052/IEPRS00EM,Liquid>aqueous,1.35,0.28,N/A
+N/A,RC2_0105_OCN-1,10.58052/IEPRS00EL,Liquid>aqueous,1.7,1.32,N/A
+N/A,RC2_0105_OCN-2,10.58052/IEPRS00EL,Liquid>aqueous,1.69,1.33,N/A
+N/A,RC2_0105_OCN-3,10.58052/IEPRS00EL,Liquid>aqueous,1.82,1.36,N/A
+N/A,RC2_0106_OCN-1,10.58052/IEPRS00EK,Liquid>aqueous,1.88,1.36,N/A
+N/A,RC2_0106_OCN-2,10.58052/IEPRS00EK,Liquid>aqueous,1.98,1.3,N/A
+N/A,RC2_0106_OCN-3,10.58052/IEPRS00EK,Liquid>aqueous,1.94,1.4,N/A
+N/A,RC2_0107_OCN-1,10.58052/IEPRS00SZ,Liquid>aqueous,0.43,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0107_OCN-2,10.58052/IEPRS00SZ,Liquid>aqueous,0.49,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0107_OCN-3,10.58052/IEPRS00SZ,Liquid>aqueous,0.44,TN_Below_0.07_ppm_LOD|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0108_OCN-1,10.58052/IEPRS00T1,Liquid>aqueous,0.82,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0108_OCN-2,10.58052/IEPRS00T1,Liquid>aqueous,0.85,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0108_OCN-3,10.58052/IEPRS00T1,Liquid>aqueous,0.84,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0109_OCN-1,10.58052/IEPRS00T3,Liquid>aqueous,1.12,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0109_OCN-2,10.58052/IEPRS00T3,Liquid>aqueous,0.93,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0109_OCN-3,10.58052/IEPRS00T3,Liquid>aqueous,0.92,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0110_OCN-1,10.58052/IEPRS00T5,Liquid>aqueous,1.62,0.4,N/A
+N/A,RC2_0110_OCN-2,10.58052/IEPRS00T5,Liquid>aqueous,1.53,0.39,N/A
+N/A,RC2_0110_OCN-3,10.58052/IEPRS00T5,Liquid>aqueous,1.34,0.36,N/A
+N/A,RC2_0111_OCN-1,10.58052/IEPRS00T7,Liquid>aqueous,1.62,1.34,N/A
+N/A,RC2_0111_OCN-2,10.58052/IEPRS00T7,Liquid>aqueous,1.67,1.35,N/A
+N/A,RC2_0111_OCN-3,10.58052/IEPRS00T7,Liquid>aqueous,1.6,1.39,N/A
+N/A,RC2_0112_OCN-1,10.58052/IEPRS00T9,Liquid>aqueous,1.66,1.33,N/A
+N/A,RC2_0112_OCN-2,10.58052/IEPRS00T9,Liquid>aqueous,1.64,1.3,N/A
+N/A,RC2_0112_OCN-3,10.58052/IEPRS00T9,Liquid>aqueous,1.67,1.34,N/A
+N/A,RC2_0113_OCN-1,10.58052/IEPRS00EU,Liquid>aqueous,0.75,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0113_OCN-2,10.58052/IEPRS00EU,Liquid>aqueous,0.78,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0113_OCN-3,10.58052/IEPRS00EU,Liquid>aqueous,0.87,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0114_OCN-1,10.58052/IEPRS00ET,Liquid>aqueous,1.03,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0114_OCN-2,10.58052/IEPRS00ET,Liquid>aqueous,1.01,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0114_OCN-3,10.58052/IEPRS00ET,Liquid>aqueous,0.97,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0115_OCN-1,10.58052/IEPRS00ES,Liquid>aqueous,1.38,0.1,N/A
+N/A,RC2_0115_OCN-2,10.58052/IEPRS00ES,Liquid>aqueous,1.16,0.1,N/A
+N/A,RC2_0115_OCN-3,10.58052/IEPRS00ES,Liquid>aqueous,1.15,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0116_OCN-1,10.58052/IEPRS00ER,Liquid>aqueous,1.67,0.37,N/A
+N/A,RC2_0116_OCN-2,10.58052/IEPRS00ER,Liquid>aqueous,1.65,0.37,N/A
+N/A,RC2_0116_OCN-3,10.58052/IEPRS00ER,Liquid>aqueous,1.6,0.37,N/A
+N/A,RC2_0117_OCN-1,10.58052/IEPRS00EQ,Liquid>aqueous,1.9,1.27,N/A
+N/A,RC2_0117_OCN-2,10.58052/IEPRS00EQ,Liquid>aqueous,1.82,1.25,N/A
+N/A,RC2_0117_OCN-3,10.58052/IEPRS00EQ,Liquid>aqueous,1.88,1.31,N/A
+N/A,RC2_0118_OCN-1,10.58052/IEPRS00EP,Liquid>aqueous,2.09,1.19,N/A
+N/A,RC2_0118_OCN-2,10.58052/IEPRS00EP,Liquid>aqueous,1.93,1.18,N/A
+N/A,RC2_0118_OCN-3,10.58052/IEPRS00EP,Liquid>aqueous,1.92,1.17,N/A
+N/A,RC2_0119_OCN-1,10.58052/IEPRS00FB,Liquid>aqueous,0.66,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,NPOC_CV_030; TN_CV_030; DTL_003
+N/A,RC2_0119_OCN-2,10.58052/IEPRS00FB,Liquid>aqueous,1.16,0.26,NPOC_CV_030; TN_CV_030; NPOC_OUTLIER_000; TN_OUTLIER_000
+N/A,RC2_0119_OCN-3,10.58052/IEPRS00FB,Liquid>aqueous,0.62,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,NPOC_CV_030; TN_CV_030; DTL_003
+N/A,RC2_0120_OCN-1,10.58052/IEPRS00FA,Liquid>aqueous,1.05,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0120_OCN-2,10.58052/IEPRS00FA,Liquid>aqueous,1.08,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0120_OCN-3,10.58052/IEPRS00FA,Liquid>aqueous,0.97,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0121_OCN-1,10.58052/IEPRS00F9,Liquid>aqueous,1.18,0.1,N/A
+N/A,RC2_0121_OCN-2,10.58052/IEPRS00F9,Liquid>aqueous,1.15,0.1,N/A
+N/A,RC2_0121_OCN-3,10.58052/IEPRS00F9,Liquid>aqueous,1.12,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0122_OCN-1,10.58052/IEPRS00F8,Liquid>aqueous,1.62,0.37,N/A
+N/A,RC2_0122_OCN-2,10.58052/IEPRS00F8,Liquid>aqueous,1.82,0.39,N/A
+N/A,RC2_0122_OCN-3,10.58052/IEPRS00F8,Liquid>aqueous,1.82,0.39,N/A
+N/A,RC2_0123_OCN-1,10.58052/IEPRS00FC,Liquid>aqueous,1.9,1.48,N/A
+N/A,RC2_0123_OCN-2,10.58052/IEPRS00FC,Liquid>aqueous,1.88,1.46,N/A
+N/A,RC2_0123_OCN-3,10.58052/IEPRS00FC,Liquid>aqueous,1.88,1.46,N/A
+N/A,RC2_0124_OCN-1,10.58052/IEPRS00F7,Liquid>aqueous,1.76,1.22,N/A
+N/A,RC2_0124_OCN-2,10.58052/IEPRS00F7,Liquid>aqueous,1.79,1.22,N/A
+N/A,RC2_0124_OCN-3,10.58052/IEPRS00F7,Liquid>aqueous,1.82,1.24,N/A
+N/A,RC2_0125_OCN-1,10.58052/IEPRS00F0,Liquid>aqueous,0.47,-9999,-9999
+N/A,RC2_0125_OCN-2,10.58052/IEPRS00F0,Liquid>aqueous,0.46,-9999,-9999
+N/A,RC2_0125_OCN-3,10.58052/IEPRS00F0,Liquid>aqueous,0.46,-9999,-9999
+N/A,RC2_0126_OCN-1,10.58052/IEPRS00EZ,Liquid>aqueous,0.86,-9999,-9999
+N/A,RC2_0126_OCN-2,10.58052/IEPRS00EZ,Liquid>aqueous,0.74,-9999,-9999
+N/A,RC2_0126_OCN-3,10.58052/IEPRS00EZ,Liquid>aqueous,0.79,-9999,-9999
+N/A,RC2_0127_OCN-1,10.58052/IEPRS00EY,Liquid>aqueous,0.95,-9999,-9999
+N/A,RC2_0127_OCN-2,10.58052/IEPRS00EY,Liquid>aqueous,0.9,-9999,-9999
+N/A,RC2_0127_OCN-3,10.58052/IEPRS00EY,Liquid>aqueous,1.01,-9999,-9999
+N/A,RC2_0128_OCN-1,10.58052/IEPRS00EX,Liquid>aqueous,1.4,-9999,-9999
+N/A,RC2_0128_OCN-2,10.58052/IEPRS00EX,Liquid>aqueous,1.37,-9999,-9999
+N/A,RC2_0128_OCN-3,10.58052/IEPRS00EX,Liquid>aqueous,1.42,-9999,-9999
+N/A,RC2_0129_OCN-1,10.58052/IEPRS00EW,Liquid>aqueous,1.55,-9999,-9999
+N/A,RC2_0129_OCN-2,10.58052/IEPRS00EW,Liquid>aqueous,1.6,-9999,-9999
+N/A,RC2_0129_OCN-3,10.58052/IEPRS00EW,Liquid>aqueous,1.61,-9999,-9999
+N/A,RC2_0130_OCN-1,10.58052/IEPRS00EV,Liquid>aqueous,1.71,-9999,-9999
+N/A,RC2_0130_OCN-2,10.58052/IEPRS00EV,Liquid>aqueous,1.79,-9999,-9999
+N/A,RC2_0130_OCN-3,10.58052/IEPRS00EV,Liquid>aqueous,1.68,-9999,-9999
+N/A,RC2_0131_OCN-1,10.58052/IEPRS00F6,Liquid>aqueous,0.49,-9999,-9999
+N/A,RC2_0131_OCN-2,10.58052/IEPRS00F6,Liquid>aqueous,0.56,-9999,-9999
+N/A,RC2_0131_OCN-3,10.58052/IEPRS00F6,Liquid>aqueous,0.62,-9999,-9999
+N/A,RC2_0132_OCN-1,10.58052/IEPRS00F5,Liquid>aqueous,0.8,-9999,-9999
+N/A,RC2_0132_OCN-2,10.58052/IEPRS00F5,Liquid>aqueous,0.76,-9999,-9999
+N/A,RC2_0132_OCN-3,10.58052/IEPRS00F5,Liquid>aqueous,0.76,-9999,-9999
+N/A,RC2_0133_OCN-1,10.58052/IEPRS00F4,Liquid>aqueous,0.87,-9999,-9999
+N/A,RC2_0133_OCN-2,10.58052/IEPRS00F4,Liquid>aqueous,0.9,-9999,-9999
+N/A,RC2_0133_OCN-3,10.58052/IEPRS00F4,Liquid>aqueous,0.99,-9999,-9999
+N/A,RC2_0134_OCN-1,10.58052/IEPRS00F3,Liquid>aqueous,1.27,-9999,-9999
+N/A,RC2_0134_OCN-2,10.58052/IEPRS00F3,Liquid>aqueous,1.32,-9999,-9999
+N/A,RC2_0134_OCN-3,10.58052/IEPRS00F3,Liquid>aqueous,1.33,-9999,-9999
+N/A,RC2_0135_OCN-1,10.58052/IEPRS00F2,Liquid>aqueous,1.48,-9999,-9999
+N/A,RC2_0135_OCN-2,10.58052/IEPRS00F2,Liquid>aqueous,1.47,-9999,-9999
+N/A,RC2_0135_OCN-3,10.58052/IEPRS00F2,Liquid>aqueous,1.44,-9999,-9999
+N/A,RC2_0136_OCN-1,10.58052/IEPRS00F1,Liquid>aqueous,1.64,-9999,-9999
+N/A,RC2_0136_OCN-2,10.58052/IEPRS00F1,Liquid>aqueous,1.74,-9999,-9999
+N/A,RC2_0136_OCN-3,10.58052/IEPRS00F1,Liquid>aqueous,1.66,-9999,-9999
+N/A,RC2_0137_OCN-1,10.58052/IEPRS00FI,Liquid>aqueous,0.95,0.17,OCN_004; OCN_ST_002
+N/A,RC2_0137_OCN-2,10.58052/IEPRS00FI,Liquid>aqueous,0.96,0.16,OCN_004; OCN_ST_002
+N/A,RC2_0137_OCN-3,10.58052/IEPRS00FI,Liquid>aqueous,0.99,0.11,OCN_004; OCN_ST_002
+N/A,RC2_0138_OCN-1,10.58052/IEPRS00FH,Liquid>aqueous,1.6,0.18,OCN_004; OCN_ST_002
+N/A,RC2_0138_OCN-2,10.58052/IEPRS00FH,Liquid>aqueous,1.59,0.16,OCN_004; OCN_ST_002
+N/A,RC2_0138_OCN-3,10.58052/IEPRS00FH,Liquid>aqueous,1.64,0.15,OCN_004; OCN_ST_002
+N/A,RC2_0139_OCN-1,10.58052/IEPRS00FG,Liquid>aqueous,1.08,TN_Below_0.1_ppm_Standard|0.04_ppm_Raw_Not_Corrected|0.04_ppm_Final_Corrected,TN_CV_030; DTL_003; OCN_004; OCN_ST_002; TN_OUTLIER_000
+N/A,RC2_0139_OCN-2,10.58052/IEPRS00FG,Liquid>aqueous,1.13,0.15,TN_CV_030; OCN_004; OCN_ST_002
+N/A,RC2_0139_OCN-3,10.58052/IEPRS00FG,Liquid>aqueous,1.15,0.14,TN_CV_030; OCN_004; OCN_ST_002
+N/A,RC2_0140_OCN-1,10.58052/IEPRS00FF,Liquid>aqueous,1.33,0.46,OCN_004; OCN_ST_002
+N/A,RC2_0140_OCN-2,10.58052/IEPRS00FF,Liquid>aqueous,1.37,0.46,OCN_004; OCN_ST_002
+N/A,RC2_0140_OCN-3,10.58052/IEPRS00FF,Liquid>aqueous,1.33,0.52,OCN_004; OCN_ST_002
+N/A,RC2_0141_OCN-1,10.58052/IEPRS00FE,Liquid>aqueous,1.53,1.33,OCN_004; OCN_ST_002
+N/A,RC2_0141_OCN-2,10.58052/IEPRS00FE,Liquid>aqueous,1.53,1.39,OCN_004; OCN_ST_002
+N/A,RC2_0141_OCN-3,10.58052/IEPRS00FE,Liquid>aqueous,1.55,1.33,OCN_004; OCN_ST_002
+N/A,RC2_0142_OCN-1,10.58052/IEPRS00FD,Liquid>aqueous,1.62,1.46,OCN_004; OCN_ST_002
+N/A,RC2_0142_OCN-2,10.58052/IEPRS00FD,Liquid>aqueous,1.63,1.47,OCN_004; OCN_ST_002
+N/A,RC2_0142_OCN-3,10.58052/IEPRS00FD,Liquid>aqueous,1.64,1.51,OCN_004; OCN_ST_002
+N/A,RC2_0143_OCN-1,10.58052/IEPRS00FO,Liquid>aqueous,0.97,0.13,OCN_004; OCN_ST_002
+N/A,RC2_0143_OCN-2,10.58052/IEPRS00FO,Liquid>aqueous,0.98,0.13,OCN_004; OCN_ST_002
+N/A,RC2_0143_OCN-3,10.58052/IEPRS00FO,Liquid>aqueous,1.01,0.13,OCN_004; OCN_ST_002
+N/A,RC2_0144_OCN-1,10.58052/IEPRS00FN,Liquid>aqueous,1.44,0.2,OCN_004; OCN_ST_002
+N/A,RC2_0144_OCN-2,10.58052/IEPRS00FN,Liquid>aqueous,1.4,0.11,OCN_004; OCN_ST_002
+N/A,RC2_0144_OCN-3,10.58052/IEPRS00FN,Liquid>aqueous,1.42,0.18,OCN_004; OCN_ST_002
+N/A,RC2_0145_OCN-1,10.58052/IEPRS00FM,Liquid>aqueous,1.06,0.16,OCN_004; OCN_ST_002
+N/A,RC2_0145_OCN-2,10.58052/IEPRS00FM,Liquid>aqueous,1.08,0.14,OCN_004; OCN_ST_002
+N/A,RC2_0145_OCN-3,10.58052/IEPRS00FM,Liquid>aqueous,1.07,0.13,OCN_004; OCN_ST_002
+N/A,RC2_0146_OCN-1,10.58052/IEPRS00FL,Liquid>aqueous,1.38,0.48,OCN_004; OCN_ST_002
+N/A,RC2_0146_OCN-2,10.58052/IEPRS00FL,Liquid>aqueous,1.36,0.43,OCN_004; OCN_ST_002
+N/A,RC2_0146_OCN-3,10.58052/IEPRS00FL,Liquid>aqueous,1.35,0.46,OCN_004; OCN_ST_002
+N/A,RC2_0147_OCN-1,10.58052/IEPRS00FK,Liquid>aqueous,1.39,1.21,OCN_004; OCN_ST_002
+N/A,RC2_0147_OCN-2,10.58052/IEPRS00FK,Liquid>aqueous,1.38,1.22,OCN_004; OCN_ST_002
+N/A,RC2_0147_OCN-3,10.58052/IEPRS00FK,Liquid>aqueous,1.42,1.48,OCN_004; OCN_ST_002
+N/A,RC2_0148_OCN-1,10.58052/IEPRS00FJ,Liquid>aqueous,1.45,1.25,OCN_004; OCN_ST_002
+N/A,RC2_0148_OCN-2,10.58052/IEPRS00FJ,Liquid>aqueous,1.47,1.17,OCN_004; OCN_ST_002
+N/A,RC2_0148_OCN-3,10.58052/IEPRS00FJ,Liquid>aqueous,1.52,1.24,OCN_004; OCN_ST_002
+N/A,RC2_0149_OCN-1,10.58052/IEPRS00FS,Liquid>aqueous,1.01,0.3,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0149_OCN-2,10.58052/IEPRS00FS,Liquid>aqueous,0.97,0.64,TN_CV_030
+N/A,RC2_0149_OCN-3,10.58052/IEPRS00FS,Liquid>aqueous,1.02,0.65,TN_CV_030
+N/A,RC2_0150_OCN-1,10.58052/IEPRS00FU,Liquid>aqueous,1.73,0.62,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0150_OCN-2,10.58052/IEPRS00FU,Liquid>aqueous,1.77,0.13,TN_CV_030
+N/A,RC2_0150_OCN-3,10.58052/IEPRS00FU,Liquid>aqueous,1.79,0.13,TN_CV_030
+N/A,RC2_0151_OCN-1,10.58052/IEPRS00FT,Liquid>aqueous,1.56,0.27,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0151_OCN-2,10.58052/IEPRS00FT,Liquid>aqueous,1.56,0.65,TN_CV_030
+N/A,RC2_0151_OCN-3,10.58052/IEPRS00FT,Liquid>aqueous,1.57,0.68,TN_CV_030
+N/A,RC2_0152_OCN-1,10.58052/IEPRS00FR,Liquid>aqueous,1.62,0.28,TN_CV_030
+N/A,RC2_0152_OCN-2,10.58052/IEPRS00FR,Liquid>aqueous,1.65,0.13,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0152_OCN-3,10.58052/IEPRS00FR,Liquid>aqueous,1.55,0.25,TN_CV_030
+N/A,RC2_0153_OCN-1,10.58052/IEPRS00FP,Liquid>aqueous,2.2,0.65,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0153_OCN-2,10.58052/IEPRS00FP,Liquid>aqueous,2.13,0.1,TN_CV_030
+N/A,RC2_0153_OCN-3,10.58052/IEPRS00FP,Liquid>aqueous,2.08,0.13,TN_CV_030
+N/A,RC2_0154_OCN-1,10.58052/IEPRS00FQ,Liquid>aqueous,2.11,0.25,TN_CV_030
+N/A,RC2_0154_OCN-2,10.58052/IEPRS00FQ,Liquid>aqueous,2.15,0.27,TN_CV_030
+N/A,RC2_0154_OCN-3,10.58052/IEPRS00FQ,Liquid>aqueous,2.17,0.12,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0155_OCN-1,10.58052/IEPRS00G0,Liquid>aqueous,0.8,0.12,OCN_006
+N/A,RC2_0155_OCN-2,10.58052/IEPRS00G0,Liquid>aqueous,0.84,0.14,OCN_006
+N/A,RC2_0155_OCN-3,10.58052/IEPRS00G0,Liquid>aqueous,0.82,0.15,OCN_006
+N/A,RC2_0156_OCN-1,10.58052/IEPRS00FZ,Liquid>aqueous,1.76,0.19,OCN_006
+N/A,RC2_0156_OCN-2,10.58052/IEPRS00FZ,Liquid>aqueous,1.73,0.21,OCN_006
+N/A,RC2_0156_OCN-3,10.58052/IEPRS00FZ,Liquid>aqueous,1.76,0.18,OCN_006
+N/A,RC2_0157_OCN-1,10.58052/IEPRS00FY,Liquid>aqueous,1.39,0.66,TN_CV_030
+N/A,RC2_0157_OCN-2,10.58052/IEPRS00FY,Liquid>aqueous,1.33,0.15,OCN_006; TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0157_OCN-3,10.58052/IEPRS00FY,Liquid>aqueous,1.39,0.71,TN_CV_030
+N/A,RC2_0158_OCN-1,10.58052/IEPRS00FX,Liquid>aqueous,1.42,0.3,OCN_006
+N/A,RC2_0158_OCN-2,10.58052/IEPRS00FX,Liquid>aqueous,1.44,0.42,OCN_006
+N/A,RC2_0158_OCN-3,10.58052/IEPRS00FX,Liquid>aqueous,1.37,0.3,OCN_006
+N/A,RC2_0159_OCN-1,10.58052/IEPRS00FW,Liquid>aqueous,1.66,0.62,N/A
+N/A,RC2_0159_OCN-2,10.58052/IEPRS00FW,Liquid>aqueous,1.64,0.66,OCN_006
+N/A,RC2_0159_OCN-3,10.58052/IEPRS00FW,Liquid>aqueous,1.62,0.69,OCN_006
+N/A,RC2_0160_OCN-1,10.58052/IEPRS00FV,Liquid>aqueous,1.64,0.65,OCN_006
+N/A,RC2_0160_OCN-2,10.58052/IEPRS00FV,Liquid>aqueous,1.68,0.67,OCN_006
+N/A,RC2_0160_OCN-3,10.58052/IEPRS00FV,Liquid>aqueous,1.64,0.66,OCN_006
+N/A,RC2_0163_OCN-1,10.58052/IEPRS00G1,Liquid>aqueous,1.04,0.11,N/A
+N/A,RC2_0163_OCN-2,10.58052/IEPRS00G1,Liquid>aqueous,1.06,TN_Below_0.1_ppm_Standard|0.07_ppm_Raw_Not_Corrected|0.07_ppm_Final_Corrected,DTL_003
+N/A,RC2_0163_OCN-3,10.58052/IEPRS00G1,Liquid>aqueous,1.08,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0164_OCN-1,10.58052/IEPRS00G2,Liquid>aqueous,1.08,0.29,N/A
+N/A,RC2_0164_OCN-2,10.58052/IEPRS00G2,Liquid>aqueous,1.09,0.33,N/A
+N/A,RC2_0164_OCN-3,10.58052/IEPRS00G2,Liquid>aqueous,1.12,0.33,N/A
+N/A,RC2_0165_OCN-1,10.58052/IEPRS00G3,Liquid>aqueous,1.2,0.88,N/A
+N/A,RC2_0165_OCN-2,10.58052/IEPRS00G3,Liquid>aqueous,1.18,0.88,N/A
+N/A,RC2_0165_OCN-3,10.58052/IEPRS00G3,Liquid>aqueous,1.22,0.82,N/A
+N/A,RC2_0166_OCN-1,10.58052/IEPRS00G4,Liquid>aqueous,1.24,0.97,N/A
+N/A,RC2_0166_OCN-2,10.58052/IEPRS00G4,Liquid>aqueous,1.27,1.02,N/A
+N/A,RC2_0166_OCN-3,10.58052/IEPRS00G4,Liquid>aqueous,1.23,1,N/A
+N/A,RC2_0167_OCN-1,10.58052/IEPRS00G5,Liquid>aqueous,1.74,1.25,N/A
+N/A,RC2_0167_OCN-2,10.58052/IEPRS00G5,Liquid>aqueous,1.75,1.27,N/A
+N/A,RC2_0167_OCN-3,10.58052/IEPRS00G5,Liquid>aqueous,1.74,1.28,N/A
+N/A,RC2_0177_OCN-1,10.58052/IEPRS00G6,Liquid>aqueous,3.1,-9999,N/A
+N/A,RC2_0177_OCN-2,10.58052/IEPRS00G6,Liquid>aqueous,3.14,1.01,N/A
+N/A,RC2_0177_OCN-3,10.58052/IEPRS00G6,Liquid>aqueous,3.14,1.06,N/A
+N/A,RC2_0178_OCN-1,10.58052/IEPRS00G7,Liquid>aqueous,1.87,1.23,N/A
+N/A,RC2_0178_OCN-2,10.58052/IEPRS00G7,Liquid>aqueous,1.92,1.22,N/A
+N/A,RC2_0178_OCN-3,10.58052/IEPRS00G7,Liquid>aqueous,1.86,1.21,N/A
+N/A,RC2_0179_OCN-1,10.58052/IEPRS00GA,Liquid>aqueous,1.34,0.26,N/A
+N/A,RC2_0179_OCN-2,10.58052/IEPRS00GA,Liquid>aqueous,1.33,0.24,N/A
+N/A,RC2_0179_OCN-3,10.58052/IEPRS00GA,Liquid>aqueous,1.37,0.27,N/A
+N/A,RC2_0183_OCN-1,10.58052/IEPRS00G9,Liquid>aqueous,1.51,0.63,N/A
+N/A,RC2_0183_OCN-2,10.58052/IEPRS00G9,Liquid>aqueous,1.49,0.72,N/A
+N/A,RC2_0183_OCN-3,10.58052/IEPRS00G9,Liquid>aqueous,1.5,0.68,N/A
+N/A,RC2_0184_OCN-1,10.58052/IEPRS00G8,Liquid>aqueous,1.52,0.71,N/A
+N/A,RC2_0184_OCN-2,10.58052/IEPRS00G8,Liquid>aqueous,1.53,0.72,N/A
+N/A,RC2_0184_OCN-3,10.58052/IEPRS00G8,Liquid>aqueous,1.54,0.78,N/A
+N/A,RC2_0187_OCN-1,10.58052/IEPRS00GB,Liquid>aqueous,1.57,TN_Below_0.1_ppm_Standard|0.09_ppm_Raw_Not_Corrected|0.09_ppm_Final_Corrected,DTL_003
+N/A,RC2_0187_OCN-2,10.58052/IEPRS00GB,Liquid>aqueous,1.59,TN_Below_0.1_ppm_Standard|0.1_ppm_Raw_Not_Corrected|0.1_ppm_Final_Corrected,DTL_003
+N/A,RC2_0187_OCN-3,10.58052/IEPRS00GB,Liquid>aqueous,1.53,TN_Below_0.1_ppm_Standard|0.08_ppm_Raw_Not_Corrected|0.08_ppm_Final_Corrected,DTL_003
+N/A,RC2_0188_OCN-1,10.58052/IEPRS00GC,Liquid>aqueous,3.09,0.72,N/A
+N/A,RC2_0188_OCN-2,10.58052/IEPRS00GC,Liquid>aqueous,3.16,0.71,N/A
+N/A,RC2_0188_OCN-3,10.58052/IEPRS00GC,Liquid>aqueous,3.13,0.75,N/A
+N/A,RC2_0189_OCN-1,10.58052/IEPRS00GD,Liquid>aqueous,1.87,1.39,TN_CV_030
+N/A,RC2_0189_OCN-2,10.58052/IEPRS00GD,Liquid>aqueous,1.89,0.76,TN_CV_030
+N/A,RC2_0189_OCN-3,10.58052/IEPRS00GD,Liquid>aqueous,1.87,2.93,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0190_OCN-1,10.58052/IEPRS00GE,Liquid>aqueous,1.53,0.85,N/A
+N/A,RC2_0190_OCN-2,10.58052/IEPRS00GE,Liquid>aqueous,1.54,0.84,N/A
+N/A,RC2_0190_OCN-3,10.58052/IEPRS00GE,Liquid>aqueous,1.51,0.86,N/A
+N/A,RC2_0191_OCN-1,10.58052/IEPRS00GF,Liquid>aqueous,1.37,0.95,N/A
+N/A,RC2_0191_OCN-2,10.58052/IEPRS00GF,Liquid>aqueous,1.37,0.92,N/A
+N/A,RC2_0191_OCN-3,10.58052/IEPRS00GF,Liquid>aqueous,1.41,0.93,N/A
+N/A,RC2_0192_OCN-1,10.58052/IEPRS00GG,Liquid>aqueous,1.5,0.74,N/A
+N/A,RC2_0192_OCN-2,10.58052/IEPRS00GG,Liquid>aqueous,1.46,0.76,N/A
+N/A,RC2_0192_OCN-3,10.58052/IEPRS00GG,Liquid>aqueous,1.42,0.85,N/A
+N/A,RC2_0193_OCN-1,10.58052/IEPRS00GH,Liquid>aqueous,3.28,0.25,N/A
+N/A,RC2_0193_OCN-2,10.58052/IEPRS00GH,Liquid>aqueous,3.46,0.27,N/A
+N/A,RC2_0193_OCN-3,10.58052/IEPRS00GH,Liquid>aqueous,3.35,0.25,N/A
+N/A,RC2_0194_OCN-1,10.58052/IEPRS00GI,Liquid>aqueous,2.81,0.33,N/A
+N/A,RC2_0194_OCN-2,10.58052/IEPRS00GI,Liquid>aqueous,2.87,0.32,N/A
+N/A,RC2_0194_OCN-3,10.58052/IEPRS00GI,Liquid>aqueous,2.78,0.32,N/A
+N/A,RC2_0195_OCN-1,10.58052/IEPRS00L9,Liquid>aqueous,1.86,0.15,N/A
+N/A,RC2_0195_OCN-2,10.58052/IEPRS00L9,Liquid>aqueous,1.52,0.17,N/A
+N/A,RC2_0195_OCN-3,10.58052/IEPRS00L9,Liquid>aqueous,1.58,0.18,N/A
+N/A,RC2_0196_OCN-1,10.58052/IEPRS00LA,Liquid>aqueous,1.55,0.13,TN_CV_030
+N/A,RC2_0196_OCN-2,10.58052/IEPRS00LA,Liquid>aqueous,1.79,0.61,TN_CV_030; TN_OUTLIER_000
+N/A,RC2_0196_OCN-3,10.58052/IEPRS00LA,Liquid>aqueous,1.83,0.22,TN_CV_030
+N/A,RC2_0197_OCN-1,10.58052/IEPRS00LB,Liquid>aqueous,1.57,0.26,N/A
+N/A,RC2_0197_OCN-2,10.58052/IEPRS00LB,Liquid>aqueous,1.86,0.25,N/A
+N/A,RC2_0197_OCN-3,10.58052/IEPRS00LB,Liquid>aqueous,1.82,0.25,N/A
+N/A,RC2_0198_OCN-1,10.58052/IEPRS00LC,Liquid>aqueous,1.72,0.56,N/A
+N/A,RC2_0198_OCN-2,10.58052/IEPRS00LC,Liquid>aqueous,1.91,0.58,N/A
+N/A,RC2_0198_OCN-3,10.58052/IEPRS00LC,Liquid>aqueous,1.84,0.55,N/A
+N/A,RC2_0199_OCN-1,10.58052/IEPRS00LD,Liquid>aqueous,1.79,0.59,N/A
+N/A,RC2_0199_OCN-2,10.58052/IEPRS00LD,Liquid>aqueous,1.63,0.58,N/A
+N/A,RC2_0199_OCN-3,10.58052/IEPRS00LD,Liquid>aqueous,1.55,0.58,N/A
+N/A,RC2_0200_OCN-1,10.58052/IEPRS00LE,Liquid>aqueous,0.86,0.15,N/A
+N/A,RC2_0200_OCN-2,10.58052/IEPRS00LE,Liquid>aqueous,0.87,0.15,N/A
+N/A,RC2_0200_OCN-3,10.58052/IEPRS00LE,Liquid>aqueous,0.87,0.14,N/A
+N/A,RC2_0201_OCN-1,10.58052/IEPRS00LF,Liquid>aqueous,2.33,0.14,N/A
+N/A,RC2_0201_OCN-2,10.58052/IEPRS00LF,Liquid>aqueous,2.31,0.14,VI_OCN_011
+N/A,RC2_0201_OCN-3,10.58052/IEPRS00LF,Liquid>aqueous,2.36,0.17,N/A
+N/A,RC2_0202_OCN-1,10.58052/IEPRS00LG,Liquid>aqueous,2.01,0.12,N/A
+N/A,RC2_0202_OCN-2,10.58052/IEPRS00LG,Liquid>aqueous,2.01,0.13,N/A
+N/A,RC2_0202_OCN-3,10.58052/IEPRS00LG,Liquid>aqueous,1.98,0.12,N/A
+N/A,RC2_0203_OCN-1,10.58052/IEPRS00LH,Liquid>aqueous,1.79,0.2,N/A
+N/A,RC2_0203_OCN-2,10.58052/IEPRS00LH,Liquid>aqueous,1.79,0.21,N/A
+N/A,RC2_0203_OCN-3,10.58052/IEPRS00LH,Liquid>aqueous,1.83,0.19,N/A
+N/A,RC2_0204_OCN-1,10.58052/IEPRS00LI,Liquid>aqueous,1.75,0.57,N/A
+N/A,RC2_0204_OCN-2,10.58052/IEPRS00LI,Liquid>aqueous,1.76,0.2,VI_OCN_011
+N/A,RC2_0204_OCN-3,10.58052/IEPRS00LI,Liquid>aqueous,1.78,0.55,N/A
+N/A,RC2_0205_OCN-1,10.58052/IEPRS00LJ,Liquid>aqueous,1.71,0.68,N/A
+N/A,RC2_0205_OCN-2,10.58052/IEPRS00LJ,Liquid>aqueous,1.76,0.67,N/A
+N/A,RC2_0205_OCN-3,10.58052/IEPRS00LJ,Liquid>aqueous,1.74,0.71,N/A
+N/A,RC2_0206_OCN-1,10.58052/IEPRS00LK,Liquid>aqueous,0.73,0.15,N/A
+N/A,RC2_0206_OCN-2,10.58052/IEPRS00LK,Liquid>aqueous,0.7,0.17,N/A
+N/A,RC2_0206_OCN-3,10.58052/IEPRS00LK,Liquid>aqueous,0.72,0.15,N/A
+N/A,RC2_0207_OCN-1,10.58052/IEPRS00LL,Liquid>aqueous,1.77,0.18,N/A
+N/A,RC2_0207_OCN-2,10.58052/IEPRS00LL,Liquid>aqueous,1.67,0.17,N/A
+N/A,RC2_0207_OCN-3,10.58052/IEPRS00LL,Liquid>aqueous,1.67,0.16,N/A
+N/A,RC2_0208_OCN-1,10.58052/IEPRS00LM,Liquid>aqueous,1.44,0.13,N/A
+N/A,RC2_0208_OCN-2,10.58052/IEPRS00LM,Liquid>aqueous,1.48,0.14,N/A
+N/A,RC2_0208_OCN-3,10.58052/IEPRS00LM,Liquid>aqueous,1.38,0.17,N/A
+N/A,RC2_0209_OCN-1,10.58052/IEPRS00LN,Liquid>aqueous,1.58,0.22,N/A
+N/A,RC2_0209_OCN-2,10.58052/IEPRS00LN,Liquid>aqueous,1.55,0.21,N/A
+N/A,RC2_0209_OCN-3,10.58052/IEPRS00LN,Liquid>aqueous,1.61,0.19,N/A
+N/A,RC2_0210_OCN-1,10.58052/IEPRS00LO,Liquid>aqueous,1.71,0.41,N/A
+N/A,RC2_0210_OCN-2,10.58052/IEPRS00LO,Liquid>aqueous,1.7,0.4,N/A
+N/A,RC2_0210_OCN-3,10.58052/IEPRS00LO,Liquid>aqueous,1.76,0.42,N/A
+N/A,RC2_0211_OCN-1,10.58052/IEPRS00LP,Liquid>aqueous,1.75,0.47,N/A
+N/A,RC2_0211_OCN-2,10.58052/IEPRS00LP,Liquid>aqueous,1.72,0.46,N/A
+N/A,RC2_0211_OCN-3,10.58052/IEPRS00LP,Liquid>aqueous,1.77,0.47,N/A
+#End_Data,,,,,,

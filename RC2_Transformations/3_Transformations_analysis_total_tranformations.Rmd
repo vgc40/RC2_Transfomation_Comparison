@@ -12,7 +12,7 @@ editor_options:
 library(ggh4x)
 library(vegan)
 #library(lme4)
-library(broom.mixed)
+#library(broom.mixed)
 library(tidymodels)
 library(ggrepel)
 library(dendextend)
@@ -81,7 +81,7 @@ classify_transformation <- function(formula_name) {
 
 ```{r}
 
-trans_summary <- read_csv("output/Transformations_summary_all.csv") %>% 
+trans_summary <- read_csv("output_aligned/Transformations_summary_all.csv") %>% 
   select(!c("Group", "Transformation", "mf")) %>% 
   mutate(Formula = case_when(
     
@@ -90,7 +90,7 @@ trans_summary <- read_csv("output/Transformations_summary_all.csv") %>%
     TRUE ~ Formula
   ))
 
-trans_counts <- read_csv("output/Transformations_summary_counts.csv") %>% 
+trans_counts <- read_csv("output_aligned/Transformations_summary_counts.csv") %>% 
   mutate(Formula = case_when(
     
     # Matches #N/A-1 through #N/A-5
@@ -204,7 +204,7 @@ for (i in 1:length(files)){
 }
 
 
-write_csv(total_peak, "output/Total_num_peaks_7-2-26.csv")
+write_csv(total_peak, "output_aligned/Total_num_peaks_7-6-26.csv")
 
 
 ```
@@ -223,7 +223,7 @@ trans_counts_norm <- trans_counts %>%
   mutate(norm_count = Counts/num_peak) %>%
   left_join(key_fixed, by = c("Formula" = "Name"))
 # 
- write_csv(trans_counts_norm, "output/Transformation_count_normalized_7-2-26.csv")
+ write_csv(trans_counts_norm, "output_aligned/Transformation_count_normalized_7-6-26.csv")
 
 ```
 
@@ -245,7 +245,7 @@ trans_total <- trans_counts_norm %>%
     .groups = "drop"
   )
 
-write_csv(trans_total, "output/Total_Transformations_normalized_7_2_26.csv")
+write_csv(trans_total, "output_aligned/Total_Transformations_normalized_7_6_26.csv")
 
 
 

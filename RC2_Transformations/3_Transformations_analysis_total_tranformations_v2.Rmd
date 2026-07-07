@@ -1,0 +1,103 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: console
+---
+
+# Loading libraries
+
+```{r}
+
+library(tidyverse)
+
+```
+
+
+
+# Loading dataset
+
+## Transformations results
+
+
+```{r}
+
+
+
+trans_counts <- read_csv("output_unaligned/Transformations_summary_counts.csv") %>% 
+  mutate(Formula = case_when(
+    
+    # Matches #N/A-1 through #N/A-5
+    str_detect(Formula, "#N/A-[1-5]") ~ str_replace(Formula, "#N/A-", "NA_"),
+    TRUE ~ Formula
+  ))
+
+
+
+# trans_summary <- read_csv("output_unaligned/Transformations_summary_all.csv") %>% 
+#   select(!c("Group", "Transformation", "mf")) %>% 
+#   mutate(Formula = case_when(
+#     
+#     # Matches #N/A-1 through #N/A-5
+#     str_detect(Formula, "#N/A-[1-5]") ~ str_replace(Formula, "#N/A-", "NA_"),
+#     TRUE ~ Formula
+#   ))
+
+##Trans_summary not added to the repo because of size, but code should generate it. Use this file only if intensity weighted tranformation is desired
+
+
+```
+
+
+## Tranformations normalization
+
+# Loading CoreMS results
+
+```{r}
+
+bob_sediment_data <- read_csv("output_unaligned/Processed_RC2_unaligned_Data_from_folders.csv")
+
+bob_sediment_mol <- read_csv("output_aligned/Processed_RC2_aligned_Mol.csv")
+
+
+
+```
+
+# Calculate total number of peaks per sample
+
+```{r}
+
+bob_total_peak <- bob_sediment_data %>% 
+  pivot_longer(!Mass, names_to = "SampleID", values_to = "intensity") %>% 
+  filter(intensity > 0) %>% 
+  group_by(SampleID) %>% 
+  summarise(num_peak = n())
+
+write.csv(bob_total_peak, "output_unaligned/Total_peaks_per_sample_unaligned.csv")
+
+```
+
+
+# Normalize tranformations counts based on total peaks per sample
+
+
+```{r}
+
+trans_counts_norm <- trans_counts %>%
+  left_join(bob_total_peak) %>%
+  select(!c(Group, Transformation, Perc_Counts)) %>%
+  group_by(SampleID, Formula) %>%
+  mutate(norm_count = Counts/num_peak)
+
+## Per sample
+
+sample_test <- trans_counts_norm %>% 
+  group_by(SampleID) %>% 
+  summarise(norm_trans = sum(norm_count),
+            total_trans = sum(Counts))
+
+write_csv(sample_test, "output_unaligned/Transformations_summary_counts_norm.csv")
+  
+```
+
+
